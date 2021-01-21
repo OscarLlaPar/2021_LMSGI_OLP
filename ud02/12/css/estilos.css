@@ -1,0 +1,169 @@
+html{
+	margin: 0px;
+	padding: 0px;
+}
+@font-face{
+	font-family: 'FontAwesome';
+	src:url('../fonts/fontawesome/webfonts/fa-solid-900.woff')
+}
+
+ul, ol{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+
+#content{
+	background-color: grey;
+	width: 100%;
+}
+#content #izq{
+	width: 30%;
+	float: left;
+	background-color: grey;
+	padding: 20px;
+}
+#content #der{
+	width: 66%;
+	float: right;
+	background-color: lightyellow;
+	border: solid black 3px;
+}
+#content #izq .dato{
+	padding: 20px;
+}
+#content #izq .dato span{
+	font-weight: bold;
+	letter-spacing: 5px;
+}
+#content #izq .dato:before {
+	position: relative;
+	font-family: 'FontAwesome';
+	width: 30px;
+	height: 30px;
+	font-size: 20px;
+	text-align: center;
+	line-height: 30px;
+	color: white;
+	border: 1px solid white;
+	border-radius: 50%;
+	padding: 5px;
+	background-color: black;
+}
+#content #izq .direccion:before{
+	content:'\f041';
+}
+#content #izq .telefono:before{
+	content:'\f095';
+}
+#content #izq .email:before{
+	content:'\f1fa';
+}
+#content #izq .fecha:before{
+	content:'\f1fd';
+}
+#content #izq .nacionalidad:before{
+	content:'\f0ac';
+}
+#content #izq .civil:before{
+	content:'\f007';
+}
+#content #izq .dni:before{
+	content:'\f234';
+}
+#content #izq .hora:before{
+	content:'\f279';
+}
+#der .lista{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left:50px;
+	margin-right: 15px;
+	height: 35px;
+	border-bottom: 1px dotted blue;
+}
+#content #der .lista:before{
+	position: relative;
+	font-family: 'FontAwesome';
+	width: 30px;
+	height: 30px;
+	font-size: 20px;
+	text-align: center;
+	line-height: 30px;
+	color: white;
+	border: 1px solid white;
+	border-radius: 50%;
+	padding: 5px;
+	background-color: black;
+}
+#content #der .historia:before{
+	content:'\f1dc';
+}
+#content #der .estudios:before{
+	content:'\f19d';
+}
+#content #der .virtudes:before{
+	content:'\f118';
+}
+#content #der .conducir:before{
+	content:'\f1b9';
+}
+#content #der .idiomas:before{
+	content:'\f024';
+}
+#content #der .tick {
+	font-family: 'FontAwesome';
+	margin-left: 50px;
+}
+#content #der .tick:before{
+	content: '\f00c';
+	padding-right: 5px;
+}
+
+#content #der .container .inner{
+	
+	border: solid black 3px;
+	
+}
+#content #der .container{
+	position: relative;
+	padding: 5px;
+	border: solid black 3px;
+	margin-left: 50px;
+	margin-right: 50px;
+	width: 90%;
+	height: 302px;
+}
+#content #der .inner{
+	position: absolute;
+	display: inline-block;
+	margin-left: 0px;
+	top: 5px;
+}
+#content #der .inner li{
+	margin-left: -35px;
+	margin-right: 5px;
+}
+#content #der .second{
+	left: 300px;
+}
+.empresa{
+	color: blue;
+	font-style: italic;
+}
+section{
+	line-height:0px;
+	padding: 2px;
+	margin-left: 2px;
+}
+figcaption{
+	text-align: center;
+	font-size: 12px;
+	color: white;
+	margin-top: 30px;
+}
+img{
+	margin-left: 20%;
+}

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>LMSGI: Prácticas CSS de Óscar Llamas Parra</title>
+	<id>http://192.168.2.111/</id>
+	<updated>2021-01-19T17:13:10+01:00</updated>
+	<link rel="alternate" href="http://192.168.2.111/"></link>
+	<link rel="self" type="text/atom+xml" href="http://192.168.2.111/atom.xml"></link>
+	<author>
+		<name>Óscar Llamas Parra</name>
+		<uri>https://github.com/OscarLlaPar</uri>
+		<email>oscar.llapar@educa.jcyl.es</email>
+	</author>
+	<entry>
+		<title>Práctica 10: CSS con tablas</title>
+		<id>http://192.168.2.111/ud02/10/index.html</id>
+		<content>
+			<![CDATA[
+				<h2>TABLAS</h2>
+				<p>Práctica realizada para probar diferentes estilos CSS en una tabla</p>
+			]]>
+		</content>
+		<updated>2021-01-20T16:22:27+01:00</updated>
+	</entry>
+	<entry>
+		<title>Práctica 11: Posición</title>
+		<id>http://192.168.2.111/ud02/11/index.html</id>
+		<content>
+			<![CDATA[
+				<h2>POSICIÓN</h2>
+				<p>Práctica probada para probar los diferentes valores del atributo <em>position</em>:</p>
+				<ul>
+					<li><em><strong>static</strong></em> (por defecto)</li>
+					<li><em><strong>relative</strong></em></li>
+					<li><em><strong>fixed</strong></em></li>
+					<li><em><strong>absolute</strong></em></li>
+					<li><em><strong>sticky</strong></em></li>
+				</ul>
+			]]>
+		</content>
+		<updated>2021-01-20T16:44:31+01:00</updated>
+	</entry>
+	<entry>
+		<title>Práctica 12: Ejemplo de currículum</title>
+		<id>http://192.168.2.111/ud02/12/index.html</id>
+		<content>
+			<![CDATA[
+				<h2>CURRÍCULUM</h2>
+				<p>Ejemplo de currículum realizado con CSS.</p>
+			]]>
+		</content>
+		<updated>2021-01-20T17:36:12+01:00</updated>
+	</entry>
+	<entry>
+		<title>Práctica 13: Noticias y artículos</title>
+		<id>http://192.168.2.111/ud02/13/index.html</id>
+		<content>
+			<![CDATA[
+				<h2>NOTICIAS Y ARTÍCULOS</h2>
+				<p>En esta práctica se colocan tres filas y tres columnas de artículos utilizando la propiedad <em>float</em> en CSS.</p>
+			]]>
+		</content>
+		<updated>2021-01-20T17:51:06+01:00</updated>
+	</entry>
+	<entry>
+		<title>Práctica 14: Libros más vendidos</title>
+		<id>http://192.168.2.111/ud02/14/index.html</id>
+		<content>
+			<![CDATA[
+				<h2>LIBROS MÁS VENDIDOS</h2>
+				<p>Práctica de CSS en la que se recoge todo lo aprendido en las anteriores prácticas.</p>
+			]]>
+		</content>
+		<updated>2021-01-20T19:01:45+01:00</updated>
+	</entry>
+</feed>

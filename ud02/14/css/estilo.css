@@ -1,0 +1,97 @@
+﻿html{
+	margin: 0px;
+	padding: 0px;
+}
+@font-face{
+	font-family: 'FontAwesome';
+	src:url('../fonts/fontawesome/webfonts/fa-solid-900.woff')
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+body{
+	font-family: Comic Sans MS, Comic Sans, cursive;
+}
+ul, ol{
+	list-style: none;
+}
+nav li{
+	font-family: 'FontAwesome';
+	display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+nav li:hover{
+	background-color: lightgrey;
+}
+nav li:before{
+	margin: 5px;
+}
+nav li:nth-child(1):before{
+	content: '\f015';
+}
+nav li:nth-child(2):before{
+	content: '\f1ea';
+}
+nav li:nth-child(3):before{
+	content: '\f007';
+}
+nav li:nth-child(4):before{
+	content: '\f128';
+}
+.topmenu{
+	background-color: grey;
+	text-align: center;
+}
+.clearfix{
+	position: relative;
+	margin-left: -40px;
+}
+
+.clearfix .sidemenu li{
+	background-color: grey;
+	margin-bottom: 2px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.sidemenu{
+	float: left;
+	margin-top: -16px;
+}
+.content{
+	width: 66%;
+	margin-left: 260px;
+}
+.sidemenu li a {
+	color: white;
+}
+.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+h1, h2{
+	color: darkred;
+	font-variant: small-caps;
+
+}
+article h2{
+	margin-left: 5px;
+	letter-spacing: 3px;
+}
+.header{
+	text-align: center;
+	border: solid darkred 2px;
+	font-style: italic;
+}
+footer{
+	text-align: center;
+	background-color: grey;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+

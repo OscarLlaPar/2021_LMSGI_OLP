@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+<head>
+<title>Feed Subscriptions</title>
+</head>
+<body>
+      <outline text="Noticias Educacyl" title="Noticias Educacyl" type="rss" 
+            xmlUrl="https://www.educa.jcyl.es/educacyl/cm/rss?locale=es_ES&amp;textOnly=false&amp;rssContent=5" htmlUrl="https://www.educa.jcyl.es/es/noticias/noticias"/>
+      <outline text="LMSGI-RSS-ÓscarLlamasParra" title="LMSGI-RSS-ÓscarLlamasParra" type="rss" 
+            xmlUrl="http://192.168.2.111/ud03/rss.xml" htmlUrl="http://192.168.2.111/"/>
+</body>
+</opml>

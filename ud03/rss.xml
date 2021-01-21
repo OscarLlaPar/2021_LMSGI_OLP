@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+	<channel>
+		<title>Radio Salix: IES Los Sauces</title>
+		<link>http://ieslossauces.centros.educa.jcyl.es/sitio/index.cgi?wid_seccion=51</link>
+		<description>
+			<![CDATA[
+				<h1>Radio Salix: La radio de IES Los Sauces</h1>
+			]]>
+		</description>
+		<item>
+			<title>Onda Salix nº 1</title>
+			<link>https://www.mixcloud.com/ondasalix/no1-para-que-te-enteres-onda-salix/</link>
+			<description>
+				<![CDATA[
+					Onda Salix estrena su programa "Para que te enteres", con buena música y buen rollo. Podrás escuchar 3 secciones de lo más interesante:
+					- En ¿Cuál es el siguiente número? La maravillosa sucesión de Fibonacci
+					- En "Unos y Ceros", ¿es lo mismo wifi que internet?
+					- Día especial 25 N. ¿Qué sabes y qué opinas de ese día? Yolanda, trabajadora social de la Cruz Roja te saca de dudas.
+					- El proyecto Erasmus K3 en el que el centro está participando.
+				]]>
+			</description>
+		</item>
+		<item>
+			<title>Onda Salix nº 2</title>
+			<link>https://www.mixcloud.com/ondasalix/no2-para-que-te-enteres-onda-salix/</link>
+			<description>
+				<![CDATA[
+					Una nueva edición del programa "Para Que Te Enteres" de Onda Salix, la radio del IES "LOS SAUCES".
+					Noticias, mitología griega, matemáticas, aula empresa, unos y ceros, paloteo...
+				]]>
+			</description>
+		</item>
+		<item>
+			<title>Onda Salix nº 3</title>
+			<link>https://www.ivoox.com/n-3-para-te-enteres-audios-mp3_rf_62208741_1.html</link>
+			<description>
+				<![CDATA[
+					En esta edición de para que te enteres...
+					Noticias
+					Mitología
+					El Siguiente Número
+					Cristina Folgado
+					Entrevista 2ºBach Proyectos COVID-19
+					Unos y Ceros
+				]]>
+			</description>
+		</item>
+		<item>
+			<title>Onda Salix nº 4</title>
+			<link>https://www.ivoox.com/n-4-para-te-enteres-onda-audios-mp3_rf_62853064_1.html</link>
+			<description>
+				<![CDATA[
+					Cerramos el trimestre con la emisión en directo del programa cargado de nuevas secciones, 
+					balance del año de la directora del centro, villancicos y también siguen las secciones de siempre. No te lo pierdas, en televisión Benavente no se lo han perdido.
+				]]>
+			</description>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+body{
+	font-family: Arial;
+}
+ul, ol{
+	list-style: none;
+}
+nav {
+	text-align: center;
+}
+nav li{
+	display: inline-block;
+	padding: 10px;
+	
+}
+nav a:hover{
+	background-color:grey;
+	color: white;
+	padding: 20px;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+header, h2, h3, h4{
+	text-align: center;
+	
+}
+h2{
+	padding: 30px;
+}
+
+h3{
+	padding: 20px;
+}
+h3 a{
+	color: white;
+}
+h3 a:hover{
+	color: black;
+}
+h4{
+	color: white;
+	font-size: 14px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+article{
+	background-color: grey;
+	margin: 0px 10px 2px 0px;
+	border-top-left-radius: 100px 30px;
+	border-top-right-radius: 100px 30px;
+	border-bottom-left-radius: 100px 30px;
+	border-bottom-right-radius: 100px 30px;
+}
+section{
+	float: left;
+	width: 33.33%;
+	padding: 10px;
+	
+}
+main:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+footer{
+	text-align:center;
+	padding: 10px;
+}
+article .content{
+	position: relative;
+	padding-left: 125px;
+}
+article figure{
+	position: absolute;
+	left: -39px;
+	top: -15px;
+}
+article img{
+	width:120px;
+	height:120px;
+}
+article figcaption{
+	font-size: 10px;
+	text-align: center;
+	width: 120px;
+}
+article footer{
+	padding: 10px;
+	text-align: center;
+	margin-left: 50%;
+}

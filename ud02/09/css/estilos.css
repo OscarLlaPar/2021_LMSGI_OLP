@@ -1,0 +1,110 @@
+@font-face{
+	font-family: "Parisienne";
+	src: url('../fonts/Parisienne-Regular.ttf');
+}
+@font-face{	
+	font-family: "Goldman";
+	src: url('../fonts/Goldman-Regular.ttf');
+}
+@font-face{	
+	font-family: "Goldman-Bold";
+	src: url('../fonts/Goldman-Bold.ttf');
+}
+body{
+	background-image: url('../images/Le_petit_prince.png');
+	background-repeat: no-repeat;
+	background-position: top right;
+	margin-right: 300px;
+	font-family: Goldman;
+}
+@font-face{
+	font-family: "FrederickatheGreat";
+	src: url('../fonts/FrederickatheGreat-Regular.ttf');
+}
+h1{
+	font-size: 3em;
+	color: Crimson;
+	font-weight: bold;
+	text-decoration: underline;
+	text-decoration-style: wavy;
+	text-decoration-color: Crimson;
+	letter-spacing: 5px;
+	text-transform: capitalize;
+}
+
+p{
+	font-family: Goldman;
+	font-style: italic;
+	background-color: Crimson;
+	/*font-size: 2em;*/
+	padding-top: 5px 0;
+}
+p span{
+	color:#fff;
+}
+p:first-letter{
+	font-size: 2.5em;
+}
+li{
+	font-size: 1.5em;
+}
+.lista1 > li, .lista2 > li, .lista3 > li {
+	/*border-style:dotted;
+	border-color: Crimson;
+	border-width: 1px;*/
+	border: dotted Crimson 1px;
+}
+.lista1 {
+	list-style-position: inside;
+	list-style-type: circle;
+}
+.lista1 li:nth-child(1){
+	font-family: "Goldman-Bold";
+}
+.lista2{
+	list-style-position:outside;
+	list-style-type: square;
+}
+.lista3{
+	list-style-position: inside;
+	list-style-image: url('../images/sqpurple.png');
+}
+.lista4{
+	background-color: lightsalmon;
+	border: dashed 2px darkred;
+	list-style-type: none;
+	padding: 5px 15px;
+}
+.lista4 li {
+	background-color: darkred;
+	color: lightsalmon;
+	margin-top: 5px; 
+	padding-left: 5px;
+}
+.lista4 li:before{
+	content: '#';
+	width: 1em;
+	margin-left:1.5em;
+	color: darkred;
+	display:inline-block;
+}
+.lista5{
+	background-color: lightsalmon;
+	list-style-type: none;
+	border-left-color: darkred;
+	border-left-width: 5px;
+	border-left-style: solid;
+	padding: 5px;
+}
+.lista6{
+	color: darkred;
+	list-style-type: none;
+}
+.lista6 li{
+	border-style: dotted;
+	border-color: darkred;
+	border-width: 1px 1px 0px 1px;
+}
+.lista6 li:last-child{
+	border-bottom-width: 1px;
+}
