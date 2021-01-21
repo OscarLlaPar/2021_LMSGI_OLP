@@ -1,60 +1,111 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <rss version="2.0">
 	<channel>
-		<title>Radio Salix: IES Los Sauces</title>
-		<link>http://ieslossauces.centros.educa.jcyl.es/sitio/index.cgi?wid_seccion=51</link>
+		<title>LMSGI-RSS-ÓscarLlamasParra</title>
+		<link>http://192.168.2.111/</link>
 		<description>
 			<![CDATA[
-				<h1>Radio Salix: La radio de IES Los Sauces</h1>
+				<h1>Prácticas de CSS realizadas por Óscar Llamas Parra.
+				DAW1-LMSGI IES Los Sauces, curso 2020-21</h1>
 			]]>
 		</description>
+		<category>Educación</category>
+		<language>es-es</language>
+        <copyright>2020 IES los Sauces. All rights reserved </copyright>
+		<pubDate>Mon, 13 Jan 2020 12:59:38 +0100</pubDate>
+		<skipDays>
+            <day>Saturday</day>
+            <day>Sunday</day>
+        </skipDays>
+        <skipHours>
+            <hour>0</hour>
+            <hour>1</hour>
+            <hour>3</hour>
+            <hour>4</hour>
+            <hour>5</hour>
+            <hour>6</hour>
+            <hour>7</hour>
+        </skipHours>
+		<image>
+            <title>Prácticas CSS Óscar Llamas Parra</title>
+            <url>http://192.168.2.111/</url>
+            <link>http://192.168.2.111/imagen/favicon.ico</link>
+            <height>141</height>
+            <description>Logo del IES Los Sauces</description>
+        </image>
 		<item>
-			<title>Onda Salix nº 1</title>
-			<link>https://www.mixcloud.com/ondasalix/no1-para-que-te-enteres-onda-salix/</link>
+			<title>Práctica 10: CSS con tablas</title>
+			<link>http://192.168.2.111/ud02/10/index.html</link>
+			<guid isPermaLink="true">http://192.168.2.111/ud02/10/index.html</guid>
 			<description>
 				<![CDATA[
-					Onda Salix estrena su programa "Para que te enteres", con buena música y buen rollo. Podrás escuchar 3 secciones de lo más interesante:
-					- En ¿Cuál es el siguiente número? La maravillosa sucesión de Fibonacci
-					- En "Unos y Ceros", ¿es lo mismo wifi que internet?
-					- Día especial 25 N. ¿Qué sabes y qué opinas de ese día? Yolanda, trabajadora social de la Cruz Roja te saca de dudas.
-					- El proyecto Erasmus K3 en el que el centro está participando.
+					<h2>TABLAS</h2>
+					<p>Práctica realizada para probar diferentes estilos CSS en una tabla</p>
+					<img src="http://192.168.2.111/imagen/p10.png" alt="CSS con tablas" height="141"></img>
 				]]>
 			</description>
+			<pubDate>Tue, 24 Nov 2020 12:34:59 +0100</pubDate>
+			<author>oscar.llapar@educa.jcyl.es</author>
 		</item>
 		<item>
-			<title>Onda Salix nº 2</title>
-			<link>https://www.mixcloud.com/ondasalix/no2-para-que-te-enteres-onda-salix/</link>
+			<title>Práctica 11: Posición</title>
+			<link>http://192.168.2.111/ud02/11/index.html</link>
+			<guid isPermaLink="true">http://192.168.2.111/ud02/11/index.html</guid>
 			<description>
 				<![CDATA[
-					Una nueva edición del programa "Para Que Te Enteres" de Onda Salix, la radio del IES "LOS SAUCES".
-					Noticias, mitología griega, matemáticas, aula empresa, unos y ceros, paloteo...
+					<h2>POSICIÓN</h2>
+					<p>Práctica probada para probar los diferentes valores del atributo <em>position</em>:</p>
+					<ul>
+						<li><em><strong>static</strong></em> (por defecto)</li>
+						<li><em><strong>relative</strong></em></li>
+						<li><em><strong>fixed</strong></em></li>
+						<li><em><strong>absolute</strong></em></li>
+						<li><em><strong>sticky</strong></em></li>
+					</ul>
+					<img src="http://192.168.2.111/imagen/p11.png" alt="Posición" height="141"></img>
 				]]>
 			</description>
+			<author>oscar.llapar@educa.jcyl.es</author>
 		</item>
 		<item>
-			<title>Onda Salix nº 3</title>
-			<link>https://www.ivoox.com/n-3-para-te-enteres-audios-mp3_rf_62208741_1.html</link>
+			<title>Práctica 12: Ejemplo de currículum</title>
+			<link>http://192.168.2.111/ud02/12/index.html</link>
+			<guid isPermaLink="true">http://192.168.2.111/ud02/12/index.html</guid>
 			<description>
 				<![CDATA[
-					En esta edición de para que te enteres...
-					Noticias
-					Mitología
-					El Siguiente Número
-					Cristina Folgado
-					Entrevista 2ºBach Proyectos COVID-19
-					Unos y Ceros
+					<h2>CURRÍCULUM</h2>
+					<p>Ejemplo de currículum realizado con CSS.</p>
+					<img src="http://192.168.2.111/imagen/p12.png" alt="Curriculum" height="141"></img>
 				]]>
 			</description>
+			<author>oscar.llapar@educa.jcyl.es</author>
 		</item>
 		<item>
-			<title>Onda Salix nº 4</title>
-			<link>https://www.ivoox.com/n-4-para-te-enteres-onda-audios-mp3_rf_62853064_1.html</link>
+			<title>Práctica 13: Noticias y artículos</title>
+			<link>http://192.168.2.111/ud02/13/index.html</link>
+			<guid isPermaLink="true">http://192.168.2.111/ud02/13/index.html</guid>
 			<description>
 				<![CDATA[
-					Cerramos el trimestre con la emisión en directo del programa cargado de nuevas secciones, 
-					balance del año de la directora del centro, villancicos y también siguen las secciones de siempre. No te lo pierdas, en televisión Benavente no se lo han perdido.
+					<h2>NOTICIAS Y ARTÍCULOS</h2>
+					<p>En esta práctica se colocan tres filas y tres columnas de artículos utilizando la propiedad <em>float</em> en CSS.</p>
+					<img src="http://192.168.2.111/imagen/p13.png" alt="Noticias y artículos" height="141"></img>
 				]]>
 			</description>
+			<author>oscar.llapar@educa.jcyl.es</author>
+		</item>
+		<item>
+			<title>Práctica 14: Libros más vendidos</title>
+			<link>http://192.168.2.111/ud02/14/index.html</link>
+			<guid isPermaLink="true">http://192.168.2.111/ud02/14/index.html</guid>
+			<description>
+				<![CDATA[
+					<h2>LIBROS MÁS VENDIDOS</h2>
+					<p>Práctica de CSS en la que se recoge todo lo aprendido en las anteriores prácticas.</p>
+					<img src="http://192.168.2.111/imagen/p14.png" alt="Libros más vendidos" height="141"></img>
+				]]>
+			</description>
+			<pubDate>Wed, 9 Dec 2020 10:14:32 +0100</pubDate>
+			<author>oscar.llapar@educa.jcyl.es</author>
 		</item>
 	</channel>
 </rss>
