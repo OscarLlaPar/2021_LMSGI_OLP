@@ -5,39 +5,34 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 
+
 <!DOCTYPE tabla[
     <!ELEMENT descripcion (#PCDATA)>
     <!ELEMENT dia (#PCDATA)>
     <!ELEMENT mes (#PCDATA)>
     <!ELEMENT anyo (#PCDATA)>
-    <!ELEMENT fecha (dia, mes, anyo)>
+    <!ELEMENT fecha (#PCDATA)>
     <!ELEMENT row (descripcion, fecha)>
     <!ELEMENT tabla (row+)>
+    <!ATTLIST fecha dia CDATA "01">
+    <!ATTLIST fecha mes CDATA "01">
+    <!ATTLIST fecha anyo CDATA "2001">
 ]>
 
 <tabla>
     <row>
         <descripcion>Se funda YouTube</descripcion>
-        <fecha>
-             <dia>15</dia>
-            <mes>2</mes>
-            <anyo>2005</anyo>
+        <fecha dia="15" mes="2" anyo="2005">
         </fecha>
     </row>
     <row>
         <descripcion>Se funda Google</descripcion>
-        <fecha>    
-            <dia>4</dia>
-            <mes>9</mes>
-            <anyo>1998</anyo>
+        <fecha dia="4" mes="9" anyo="1998">    
         </fecha>
     </row>
     <row>
         <descripcion>Se funda Facebook</descripcion>
-        <fecha>
-            <dia>4</dia>
-            <mes>2</mes>
-            <anyo>2004</anyo>
+        <fecha dia="4" mes="2" anyo="2004">
         </fecha>
     </row>
 </tabla>

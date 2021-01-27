@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<!DOCTYPE tabla[
+    <!ELEMENT continente (#PCDATA)>
+    <!ELEMENT pais (#PCDATA)>
+    <!ELEMENT capital (#PCDATA)>
+    <!ELEMENT row (continente, capital)>
+    <!ELEMENT tabla (row+)>
+    <!ATTLIST row pais CDATA "ESPAÑA">
+]>
+
+<tabla> 
+    <row pais="ALEMANIA"> 
+        <continente>EUROPA</continente>   
+        <capital>BERLIN</capital>   
+    </row>
+    <row pais="ARGENTINA">      
+        <continente>AMERICA</continente>     
+        <capital>BUENOS AIRES</capital>
+    </row>
+    <row pais="BAHAMAS">   
+        <continente>AMERICA</continente>  
+        <capital>NASSAU</capital>
+    </row>
+    <row pais="AFGANISTAN">
+        <continente>ASIA</continente>
+        <capital>KABUL</capital>
+    </row>
+    <row pais="ARABIA SAUDITA">
+        <continente>ASIA</continente>
+        <capital>RIAD</capital>
+    </row>
+</tabla>

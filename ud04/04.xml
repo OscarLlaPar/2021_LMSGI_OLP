@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<!DOCTYPE mail[
+    <!ELEMENT remitente (#PCDATA)>
+    <!ELEMENT destinatario (#PCDATA)>
+    <!ELEMENT asunto (#PCDATA)>
+    <!ELEMENT mensaje (#PCDATA)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT tipo (#PCDATA)>
+    <!ELEMENT fichero (nombre)>
+    <!ELEMENT mail (remitente, destinatario+, asunto?, mensaje?, fichero*)>
+    <!ATTLIST mail fecha CDATA "01-01-2001">
+    <!ATTLIST fichero tipo CDATA "image/jpeg">
+]>
+<mail fecha="27-01-2021">
+    <remitente>perico@gmail.com</remitente>
+    <destinatario>meli@gmail.com</destinatario>
+    <destinatario>amor@gmail.com</destinatario>
+    <asunto>Ejercicio 01</asunto>
+    <mensaje/>
+    <fichero tipo="application/pdf">
+        <nombre>informe.pdf</nombre>
+    </fichero>
+    <fichero tipo="image/jpeg">
+        <nombre>foto.jpg</nombre>
+    </fichero>
+</mail>
+
