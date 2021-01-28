@@ -11,7 +11,7 @@ and open the template in the editor.
     <!ELEMENT dia (#PCDATA)>
     <!ELEMENT mes (#PCDATA)>
     <!ELEMENT anyo (#PCDATA)>
-    <!ELEMENT fecha (#PCDATA)>
+    <!ELEMENT fecha EMPTY>
     <!ELEMENT row (descripcion, fecha)>
     <!ELEMENT tabla (row+)>
     <!ATTLIST fecha dia CDATA "01">
@@ -22,17 +22,14 @@ and open the template in the editor.
 <tabla>
     <row>
         <descripcion>Se funda YouTube</descripcion>
-        <fecha dia="15" mes="2" anyo="2005">
-        </fecha>
+        <fecha dia="15" mes="2" anyo="2005"/>
     </row>
     <row>
         <descripcion>Se funda Google</descripcion>
-        <fecha dia="4" mes="9" anyo="1998">    
-        </fecha>
+        <fecha dia="4" mes="9" anyo="1998"/>
     </row>
     <row>
         <descripcion>Se funda Facebook</descripcion>
-        <fecha dia="4" mes="2" anyo="2004">
-        </fecha>
+        <fecha dia="4" mes="2" anyo="2004"/>
     </row>
 </tabla>
