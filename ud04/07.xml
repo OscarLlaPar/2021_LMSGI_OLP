@@ -6,16 +6,27 @@ and open the template in the editor.
 -->
 <!DOCTYPE grupo[
     <!ELEMENT nombre (#PCDATA)>
-    <!ELEMENT tutor (#PCDATA)>
-    <!ELEMENT estudiante (nombre, tutor?)>
-    <!ELEMENT grupo (estudiante)>
-    <!ATTLIST estudiante ID CDATA "1">
-    <!ATTLIST tutor IDREF CDATA "1">
+    <!ELEMENT estudiante (nombre)>
+    <!ELEMENT grupo (estudiante*)>
+    <!ATTLIST estudiante id ID #REQUIRED>
+    <!ATTLIST estudiante idref1 IDREF #IMPLIED>
+    <!ATTLIST estudiante idref2 IDREF #IMPLIED>
 ]>
 
 <grupo>
-    <estudiante ID="1">
+    <estudiante id="E1">
         <nombre></nombre>
-        <tutor IDREF="1"></tutor>
+    </estudiante>
+    <estudiante id="E2">
+        <nombre></nombre>
+    </estudiante>
+    <estudiante id="E3" idref1="E1">
+        <nombre></nombre>
+    </estudiante>
+    <estudiante id="E4" idref1="E1" idref2="E2">
+        <nombre></nombre>
+    </estudiante>
+    <estudiante id="E5" idref1="E2">
+        <nombre></nombre>
     </estudiante>
 </grupo>

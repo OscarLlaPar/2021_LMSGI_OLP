@@ -5,44 +5,68 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
+<!DOCTYPE lenguajes[
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT codigo (#PCDATA)>
+    <!ELEMENT lenguaje (nombre, codigo+)>
+    <!ELEMENT lenguajes (lenguaje+)>
+]>
 
-
-<lenguaje>
-    <java>
+<lenguajes>
+    <lenguaje>
+        <nombre>Java</nombre>
+        <codigo>
         <![CDATA[
             public static void main (String[] args){
                 String salida="Hola mundo";
                 System.out.println(salida);
             }
         ]]>
-    </java>
-    <html>
-        <![CDATA[
-            <!DOCTYPE html>
-            <html>
-            <body>
-            <h1>Título</h1>
-            <p>Párrafo<p>
-            </body>
-            </html>
-        ]]>
-    </html>
-    <css>
-        <![CDATA[
-            * {
-                margin: 0px 0px 0px 0px;
-                padding: 0px 0px 0px 0px;
-            }
+        </codigo>
+    </lenguaje>
+    <lenguaje>
+        <nombre>HTML</nombre>
+        <codigo>
+            <![CDATA[
+                <!DOCTYPE html>
+                <html>
+                <body>
+                <h1>Título</h1>
+                <p>Párrafo<p>
+                </body>
+                </html>
+            ]]>
+        </codigo>
+    </lenguaje>
+    <lenguaje>
+        <nombre>CSS</nombre>
+        <codigo>
+            <![CDATA[
+                * {
+                    margin: 0px 0px 0px 0px;
+                    padding: 0px 0px 0px 0px;
+                }
 
-            body, html {
-                padding: 3px 3px 3px 3px;
+                body, html {
+                    padding: 3px 3px 3px 3px;
 
-                background-color: black;
-                color: white;
-                font-family: Verdana, sans-serif;
-                font-size: 11pt;
-                text-align: center;
-            }
-        ]]>
-    </css>
-</lenguaje>
+                    background-color: black;
+                    color: white;
+                    font-family: Verdana, sans-serif;
+                    font-size: 11pt;
+                    text-align: center;
+                }
+            ]]>
+        </codigo>
+    </lenguaje>
+    <lenguaje>
+        <nombre>SQL</nombre>
+        <codigo>
+            <![CDATA[
+                select nombre, apellidos
+                from alumnos
+                where nombre like 'A%';
+            ]]>
+        </codigo>
+    </lenguaje>
+</lenguajes>

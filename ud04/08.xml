@@ -4,8 +4,12 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
+<!DOCTYPE lugares[
+    <!ELEMENT lugar (#PCDATA)>
+    <!ELEMENT lugares (#PCDATA | lugar)*>
+]>
 
-
-<root>
-    
-</root>
+<lugares>
+    En el <lugar>polo norte</lugar> hace mucho frío. Pero en el 
+    <lugar>desierto del Sahara</lugar> hace mucho calor.
+</lugares>
