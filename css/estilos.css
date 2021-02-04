@@ -49,7 +49,11 @@ a:hover{
     margin-top:5px;
     margin-bottom:10px;
 }
+.header{
+}
 h2{
+   
+    left: 50%;
     border-top: solid white 4px;
     border-bottom: solid white 4px;
 }
