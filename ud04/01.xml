@@ -4,7 +4,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-
+<!--
 <!DOCTYPE mail[
     <!ELEMENT remitente (#PCDATA)>
     <!ELEMENT destinatario (#PCDATA)>
@@ -19,7 +19,9 @@ and open the template in the editor.
     <!ELEMENT fichero (nombre, tipo)>
     <!ELEMENT mail (remitente, destinatario+, fecha, asunto?, mensaje?, fichero*)>
 ]>
-<mail>
+-->
+<mail xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='Schema1.xsd'>
     <remitente>perico@gmail.com</remitente>
     <destinatario>ambrosio@gmail.com</destinatario>
     <destinatario>meli@gmail.com</destinatario>

@@ -4,7 +4,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-
+<!--
 <!DOCTYPE tabla[
     <!ELEMENT continente (#PCDATA)>
     <!ELEMENT pais (#PCDATA)>
@@ -12,8 +12,9 @@ and open the template in the editor.
     <!ELEMENT row (continente, pais, capital)>
     <!ELEMENT tabla (row+)>
 ]>
-
-<tabla> 
+-->
+<tabla  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='Schema2.xsd'> 
     <row> 
         <continente>EUROPA</continente>
         <pais>ALEMANIA</pais>    
