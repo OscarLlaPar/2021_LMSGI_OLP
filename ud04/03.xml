@@ -4,7 +4,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<!--
+
 <!DOCTYPE tabla[
     <!ELEMENT descripcion (#PCDATA)>
     <!ELEMENT dia (#PCDATA)>
@@ -13,8 +13,11 @@ and open the template in the editor.
     <!ELEMENT fecha (dia, mes, anyo)>
     <!ELEMENT row (descripcion, fecha)>
     <!ELEMENT tabla (row+)>
+    <!ATTLIST tabla
+        xmlns:xsi CDATA #IMPLIED
+        xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
 ]>
--->
+
 <tabla xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
     xsi:noNamespaceSchemaLocation='Schema3.xsd'>
     <row>

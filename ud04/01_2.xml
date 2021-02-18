@@ -13,22 +13,28 @@ and open the template in the editor.
     <!ELEMENT mensaje (#PCDATA)>
     <!ELEMENT nombre (#PCDATA)>
     <!ELEMENT tipo (#PCDATA)>
-    <!ELEMENT fichero (nombre)>
-    <!ELEMENT mail (remitente, destinatario+, asunto?, mensaje?, fichero*)>
-    <!ATTLIST mail fecha CDATA "01-01-2001">
+    <!ELEMENT fecha (#PCDATA)>
+    <!ELEMENT fichero (#PCDATA)>
+    <!ELEMENT mail (remitente, destinatario+, fecha, asunto?, mensaje?, fichero*)>
+    <!ATTLIST fecha 
+        dia CDATA "01"
+        mes CDATA "01"
+        anyo CDATA "2000">
     <!ATTLIST fichero tipo CDATA "image/jpeg">
+    <!ATTLIST mail
+        xmlns:xsi CDATA #IMPLIED
+        xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
 ]>
-<mail fecha="27-01-2021">
+
+<mail xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='Schema1.xsd'>
     <remitente>perico@gmail.com</remitente>
     <destinatario>meli@gmail.com</destinatario>
     <destinatario>amor@gmail.com</destinatario>
+    <fecha dia="---16" mes="--01" anyo="2021"></fecha>
     <asunto>Ejercicio 01</asunto>
     <mensaje/>
-    <fichero tipo="application/pdf">
-        <nombre>informe.pdf</nombre>
-    </fichero>
-    <fichero tipo="image/jpeg">
-        <nombre>foto.jpg</nombre>
-    </fichero>
+    <fichero tipo="application/pdf">informe.pdf</fichero>
+    <fichero tipo="image/jpeg">foto.jpg</fichero>
 </mail>
 

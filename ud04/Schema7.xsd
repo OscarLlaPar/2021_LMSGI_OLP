@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!--
+Autor: Óscar Llamas Parra
+Fecha de creación: 18/02/2021
+Última modificación: 18/02/2021
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <xs:element name="grupo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="estudiante" maxOccurs="unbounded">
+                    <xs:complexType>  
+                        <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                                <xs:attribute name="id" use="required">
+                                    <xs:simpleType>
+                                        <xs:restriction base="xs:ID">
+                                            <xs:pattern value="[a-z A-Z][1-9]"/>
+                                        </xs:restriction>
+                                        </xs:simpleType>
+                                </xs:attribute>
+                                <xs:attribute name="idref1" use="optional">
+                                    <xs:simpleType>
+                                        <xs:restriction base="xs:IDREFS">
+                                            <xs:pattern value="[a-z A-Z][1-9]"/>
+                                        </xs:restriction>
+                                        </xs:simpleType>
+                                </xs:attribute>
+                                <xs:attribute name="idref2" use="optional">
+                                    <xs:simpleType>
+                                        <xs:restriction base="xs:IDREFS">
+                                            <xs:pattern value="[a-z A-Z][1-9]"/>
+                                        </xs:restriction>
+                                        </xs:simpleType>
+                                </xs:attribute>
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType> 
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>       
+</xs:schema>

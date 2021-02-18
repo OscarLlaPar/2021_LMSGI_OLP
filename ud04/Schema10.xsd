@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <xs:element name="horario">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="modulos">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="modulo" type="xs:string" maxOccurs="unbounded"/>   
+                        </xs:sequence>
+                        <xs:attribute name="codM" type="xs:ID" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="profesores">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="profesor" type="xs:string" maxOccurs="unbounded"/>   
+                        </xs:sequence>
+                        <xs:attribute name="codP" type="xs:ID" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="imparte">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="asignatura" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:attribute name="codM" type="xs:IDREFS" use="required"/>
+                                    <xs:attribute name="codProfesor" type="xs:IDREFS" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="codM" type="xs:IDREFS" use="required"/>
+                        <xs:attribute name="codProfesor" type="xs:IDREFS" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="grupo">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="hora">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="dia_sem">
+                                            <xs:complexType>
+                                                <xs:attribute name="dia" type="xs:string"/>
+                                                <xs:attribute name="num" type="xs:integer"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="entrada" type="xs:string"/>
+                                    <xs:attribute name="salida" type="xs:string"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="idgrupo" type="xs:ID"/>
+                        <xs:attribute name="codT" type="xs:IDREFS"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -4,29 +4,23 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
+
 <!DOCTYPE grupo[
-    <!ELEMENT nombre (#PCDATA)>
-    <!ELEMENT estudiante (nombre)>
+    <!ELEMENT estudiante (#PCDATA)>
     <!ELEMENT grupo (estudiante*)>
+    <!ATTLIST grupo
+        xmlns:xsi CDATA #IMPLIED
+        xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
     <!ATTLIST estudiante id ID #REQUIRED>
     <!ATTLIST estudiante idref1 IDREF #IMPLIED>
     <!ATTLIST estudiante idref2 IDREF #IMPLIED>
 ]>
 
-<grupo>
-    <estudiante id="E1">
-        <nombre></nombre>
-    </estudiante>
-    <estudiante id="E2">
-        <nombre></nombre>
-    </estudiante>
-    <estudiante id="E3" idref1="E1">
-        <nombre></nombre>
-    </estudiante>
-    <estudiante id="E4" idref1="E1" idref2="E2">
-        <nombre></nombre>
-    </estudiante>
-    <estudiante id="E5" idref1="E2">
-        <nombre></nombre>
-    </estudiante>
+<grupo xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='Schema7.xsd'>
+    <estudiante id="E1">Fulano</estudiante>
+    <estudiante id="E2">Mengano</estudiante>
+    <estudiante id="E3" idref1="E1">Zutano</estudiante>
+    <estudiante id="E4" idref1="E1" idref2="E2">Manolo</estudiante>
+    <estudiante id="E5" idref1="E2">Pedro</estudiante>
 </grupo>
