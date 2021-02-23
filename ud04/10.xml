@@ -7,7 +7,9 @@ and open the template in the editor.
 -->
 
 
-<horario curso="2020-21">
+<horario curso="2020-21" 
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='Schema10.xsd'>
     <modulos>
         <modulo codM="EDD">Entornos de Desarrollo</modulo>
         <modulo codM="LMSGI">Lenguaje de Marcas y Sistemas de Gestion Informática</modulo>
@@ -26,7 +28,7 @@ and open the template in the editor.
     </profesores>
     <imparte>
         <asignatura codM="EDD" codProfesor="MUP"/>
-        <asignatura codM="LMSGI" codProfesor="ARN HRO"/>
+        <asignatura codM="LMSGI" codProfesor="ARN"/>
         <asignatura codM="PROG" codProfesor="ACF"/>
         <asignatura codM="BBDD" codProfesor="HRO"/>
         <asignatura codM="FOL" codProfesor="MAM"/>

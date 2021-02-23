@@ -1,7 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!ELEMENT horario (modulos,profesores,imparte, grupo*)>
 <!ATTLIST horario
-    curso CDATA #IMPLIED>
+    curso CDATA #IMPLIED
+    xmlns:xsi CDATA #IMPLIED
+    xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
 <!ELEMENT modulos (modulo)*>
 <!ELEMENT modulo (#PCDATA)>
 <!ATTLIST modulo 

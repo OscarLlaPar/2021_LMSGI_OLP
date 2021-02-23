@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalogo SYSTEM "11.dtd">
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<catalogo>
+    <portatil>
+        <referencia></referencia>
+        <nombre></nombre>
+        <fabricante nombre="HP"/>
+        <procesador>
+            <nombre>Core i3-7020U</nombre>
+            <cache tamanyo=""></cache>
+            <nprocesadores></nprocesadores>
+            <velocidad medida="GHz">2,3</velocidad>
+        </procesador>
+        <ram>
+            <memoria medida=""></memoria>
+            <tipo>DDR4</tipo>
+        </ram>
+        <disco></disco>
+        <pantalla></pantalla>
+        <grafica></grafica>
+    </portatil>
+    <portatil>
+        <referencia></referencia>
+        <nombre></nombre>
+        <fabricante nombre="LENOVO"/>
+        <procesador>
+            <nombre></nombre>
+            <cache tamanyo=""></cache>
+            <nprocesadores></nprocesadores>
+            <velocidad medida=""></velocidad>
+        </procesador>
+        <ram>
+            <memoria medida=""></memoria>
+            <tipo>DDR4</tipo>
+        </ram>
+        <disco></disco>
+        <pantalla></pantalla>
+        <grafica></grafica>
+    </portatil>
+</catalogo>
