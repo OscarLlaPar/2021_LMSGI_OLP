@@ -7,41 +7,56 @@ and open the template in the editor.
 -->
 
 
-<catalogo>
+<catalogo 
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='Schema10.xsd'>
     <portatil>
-        <referencia></referencia>
-        <nombre></nombre>
+        <referencia>HP12345</referencia>
+        <nombre>HP 15-DA0204NS</nombre>
         <fabricante nombre="HP"/>
         <procesador>
-            <nombre>Core i3-7020U</nombre>
-            <cache tamanyo=""></cache>
-            <nprocesadores></nprocesadores>
+            <nombre>Intel Core i3-7020U</nombre>
+            <cache tamanyo="MB">500</cache>
+            <nprocesadores>2</nprocesadores>
             <velocidad medida="GHz">2,3</velocidad>
         </procesador>
         <ram>
-            <memoria medida=""></memoria>
+            <memoria medida="GB">8</memoria>
             <tipo>DDR4</tipo>
         </ram>
-        <disco></disco>
-        <pantalla></pantalla>
-        <grafica></grafica>
+        <disco>
+            <tipo>SSD</tipo>
+            <capacidad medida="GB">500</capacidad>
+        </disco>
+        <pantalla>
+            <dimension>27 pulgadas</dimension>
+            <resolucion>1266x768</resolucion>
+            <rmaxima>1366x768</rmaxima>
+        </pantalla>
+        <grafica>Nvidia GTX 720</grafica>
     </portatil>
     <portatil>
-        <referencia></referencia>
-        <nombre></nombre>
+        <referencia>LE12345</referencia>
+        <nombre>LENOVO IDEAPAD S145</nombre>
         <fabricante nombre="LENOVO"/>
         <procesador>
-            <nombre></nombre>
-            <cache tamanyo=""></cache>
-            <nprocesadores></nprocesadores>
-            <velocidad medida=""></velocidad>
+            <nombre>Intel Core i3-8145U</nombre>
+            <cache tamanyo="MB">500</cache>
+            <nprocesadores>1</nprocesadores>
+            <velocidad medida="GHz">2,1</velocidad>
         </procesador>
         <ram>
-            <memoria medida=""></memoria>
+            <memoria medida="GB">8</memoria>
             <tipo>DDR4</tipo>
         </ram>
-        <disco></disco>
-        <pantalla></pantalla>
-        <grafica></grafica>
+        <disco>
+            <tipo>HDD</tipo>
+            <capacidad medida="TB">1</capacidad>
+        </disco>
+        <pantalla>
+            <dimension>23 pulgadas</dimension>
+             <resolucion>1266x768</resolucion>
+        </pantalla>
+        <grafica>Intel UHD Graphics 620</grafica>
     </portatil>
 </catalogo>

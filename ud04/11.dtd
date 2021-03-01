@@ -12,6 +12,37 @@ and open the template in the editor.
 -->
 
 <!-- TODO define your own vocabulary/syntax. Example follows:  -->
-<!ELEMENT catalogo ANY>
+<!ELEMENT catalogo (portatil)*>
+<!ATTLIST catalogo
+    xmlns:xsi CDATA #IMPLIED
+    xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
+<!ELEMENT portatil (referencia, nombre, fabricante, procesador, ram, disco, pantalla, grafica)>
+<!ELEMENT referencia (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT fabricante EMPTY>
+<!ATTLIST fabricante
+    nombre (LENOVO|HP|MSI|APPLE|ASUS|DELL|DESCONOCIDO) #REQUIRED>
+<!ELEMENT procesador (nombre+, cache, nprocesadores, velocidad)>
+<!ELEMENT cache (#PCDATA)>
+<!ATTLIST cache 
+    tamanyo (MB|GB|TB) "GB">
+<!ELEMENT nprocesadores (#PCDATA)>
+<!ELEMENT velocidad (#PCDATA)>
+<!ATTLIST velocidad
+    medida CDATA #FIXED "GHz">
+<!ELEMENT ram (memoria, tipo)>
+<!ELEMENT memoria (#PCDATA)>
+<!ATTLIST memoria 
+    medida (MB|GB|TB) "GB">
+<!ELEMENT tipo (#PCDATA)>
+<!ELEMENT disco (tipo, capacidad)>
+<!ELEMENT capacidad (#PCDATA)>
+<!ATTLIST capacidad
+    medida (MB|GB|TB) "GB">
+<!ELEMENT pantalla (dimension, resolucion, rmaxima?)>
+<!ELEMENT dimension (#PCDATA)>
+<!ELEMENT resolucion (#PCDATA)>
+<!ELEMENT rmaxima (#PCDATA)>
+<!ELEMENT grafica (#PCDATA)>
 <!ATTLIST __ROOT__ version CDATA #REQUIRED>
 
