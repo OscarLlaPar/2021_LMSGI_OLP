@@ -24,37 +24,19 @@
 <!ATTLIST recetas
     xmlns:xsi CDATA #IMPLIED
     xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
-<!--- Put your DTDDoc comment here. -->
-<!ELEMENT receta (nombre|descripcion|tiempo|ingredientes|instrucciones)*>
+<!ELEMENT receta (nombre,descripcion,tiempo,ingredientes,instrucciones)>
 <!ATTLIST receta
     plato (primero|segundo|postre) #REQUIRED>
-<!--- Put your DTDDoc comment here. -->
 <!ELEMENT nombre (#PCDATA)>
-
-<!--- Put your DTDDoc comment here. -->
 <!ELEMENT descripcion (#PCDATA)>
-
-<!--- Put your DTDDoc comment here. -->
 <!ELEMENT tiempo EMPTY>
 <!ATTLIST tiempo
-    preparacion CDATA #IMPLIED
-    coccion CDATA #IMPLIED
-  >
-
-<!--- Put your DTDDoc comment here. -->
+    preparacion CDATA #REQUIRED
+    coccion CDATA #IMPLIED>
 <!ELEMENT ingredientes (ingrediente)+>
-
-<!--- Put your DTDDoc comment here. -->
-<!ELEMENT ingrediente (nombre,cantidad*)>
-
-<!--- Put your DTDDoc comment here. -->
+<!ELEMENT ingrediente (nombre,cantidad?)>
 <!ELEMENT cantidad (#PCDATA)>
 <!ATTLIST cantidad
-    unidad CDATA #IMPLIED
-  >
-
-<!--- Put your DTDDoc comment here. -->
+    unidad (gramos|pizca|mililitros|cucharada|chorro) #IMPLIED>
 <!ELEMENT instrucciones (paso)*>
-
-<!--- Put your DTDDoc comment here. -->
 <!ELEMENT paso (#PCDATA)>

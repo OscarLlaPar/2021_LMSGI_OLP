@@ -6,6 +6,73 @@ and open the template in the editor.
 -->
 
 
-<root>
-    
-</root>
+<horario>
+    <hora entrada="08:30" salida="09:20">
+            <dia_sem dia="lunes" hora="1">Entornos de Desarrollo
+                <profesor>MUP</profesor>
+            </dia_sem>
+            <dia_sem dia="martes" hora="2">Bases de Datos
+                <profesor>HRO</profesor>
+            </dia_sem>
+            <dia_sem dia="miercoles" hora="2">Programación
+                <profesor>ACF</profesor>
+            </dia_sem>
+            <dia_sem dia="jueves" hora="2">Lenguaje de Marcas y Sistemas de Gestion Informática
+                <profesor>ARN</profesor>
+                <profesor>HRO</profesor>
+            </dia_sem>
+            <dia_sem dia="viernes" hora="1">Entornos de Desarrollo
+                <profesor>MUP</profesor>
+            </dia_sem>
+        </hora>
+        <hora entrada="09:20" salida="10:10">
+            <dia_sem dia="lunes" hora="2">Sistemas Informáticos
+                <profesor>NCB</profesor>
+            </dia_sem>
+            <dia_sem dia="viernes" hora="2">Sistemas Informáticos
+                <profesor>NCB</profesor>
+            </dia_sem>
+        </hora>
+        <hora entrada="10:10" salida="11:00">
+            <dia_sem dia="martes" hora="2">Programación
+                <profesor>ACF</profesor>
+            </dia_sem>
+            <dia_sem dia="miercoles" hora="1">Formación y Orientación Laboral
+                <profesor>MAM</profesor>
+            </dia_sem>
+            <dia_sem dia="jueves" hora="2">Programación
+                <profesor>ACF</profesor>
+            </dia_sem>
+        </hora>
+        <hora entrada="11:00" salida="11:50">
+            <dia_sem dia="lunes" hora="2">Programación
+                <profesor>ACF</profesor>
+            </dia_sem>
+            <dia_sem dia="miercoles" hora="2">Bases de Datos
+                <profesor>HRO</profesor>
+            </dia_sem>
+            <dia_sem dia="viernes" hora="1">Formación y Orientación Laboral
+                <profesor>MAM</profesor>
+            </dia_sem>
+        </hora>
+        <hora entrada="12:15" salida="13:05">
+            <dia_sem dia="martes" hora="2">Lenguaje de Marcas y Sistemas de Gestion Informática
+                <profesor>ARN</profesor>
+                <profesor>HRO</profesor>
+            </dia_sem>
+            <dia_sem dia="jueves" hora="2">Sistemas Informáticos
+                <profesor>NCB</profesor>
+            </dia_sem>
+            <dia_sem dia="viernes" hora="2">Bases de Datos
+                <profesor>HRO</profesor>
+            </dia_sem>
+        </hora>
+        <hora entrada="13:05" salida="13:55">
+            <dia_sem dia="lunes" hora="1">Formación y Orientación Laboral
+                <profesor>MAM</profesor>
+            </dia_sem>
+            <dia_sem dia="miercoles" hora="1">Entornos de Desarrollo
+                <profesor>MUP</profesor>
+            </dia_sem>
+        </hora>
+</horario>

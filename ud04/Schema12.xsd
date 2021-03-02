@@ -13,7 +13,7 @@ and open the template in the editor.
             <xs:sequence>
                 <xs:element name="receta" maxOccurs="unbounded">
                     <xs:complexType>
-                        <xs:attribute name="plato">
+                        <xs:attribute name="plato" use="required">
                             <xs:simpleType>
                                 <xs:restriction base="xs:string">
                                     <xs:pattern value="primero|segundo|postre"/>
@@ -37,8 +37,8 @@ and open the template in the editor.
                             </xs:element>
                             <xs:element name="tiempo">
                                 <xs:complexType>
-                                    <xs:attribute name="preparacion"/>
-                                    <xs:attribute name="coccion" minOccurs="0"/>
+                                    <xs:attribute name="preparacion" type="xs:positiveInteger" use="required"/>
+                                    <xs:attribute name="coccion" type="xs:positiveInteger" minOccurs="0"/>
                                 </xs:complexType>
                             </xs:element>
                             <xs:element name="ingredientes">
@@ -56,17 +56,16 @@ and open the template in the editor.
                                                     </xs:element>
                                                     <xs:element nombre="cantidad">
                                                         <xs:complexType>
-                                                            <xs:attribute name="unidad">
-                                                                <xs:simpleType>
-                                                                    <xs:restriction base="xs:string">
-                                                                        <xs:pattern value="gramos|pizca|mililitroscucharada|chorro"/>
-                                                                    </xs:restriction>
-                                                                </xs:simpleType>
-                                                            </xs:attribute>
                                                             <xs:simpleContent>
-                                                                <xs:restriction base="xs:integer">
-                                                                    
-                                                                </xs:restriction>
+                                                                <xs:extension base="xs:positiveInteger">
+                                                                    <xs:attribute name="unidad">
+                                                                        <xs:simpleType>
+                                                                            <xs:restriction base="xs:string">
+                                                                                <xs:pattern value="gramos|pizca|mililitros|cucharada|chorro"/>
+                                                                            </xs:restriction>
+                                                                        </xs:simpleType>
+                                                                    </xs:attribute>
+                                                                </xs:extension>
                                                             </xs:simpleContent>
                                                         </xs:complexType>
                                                     </xs:element>
@@ -79,7 +78,7 @@ and open the template in the editor.
                             <xs:element name="instrucciones">
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element name="paso" maxOccurs="unbounded">
+                                        <xs:element name="paso" maxOccurs="10">
                                             <xs:simpleType>
                                                 <xs:restriction base="xs:string">
                                                     
