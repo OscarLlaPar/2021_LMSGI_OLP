@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE usoredes SYSTEM "13.dtd">
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<usoredes
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='Schema13.xsd'>
+    <formulario>
+        <datos>
+            <nombre>Óscar</nombre>
+            <apellidos>Llamas Parra</apellidos>
+            <localidad provincia="Zamora">Benavente</localidad>
+            <sexo>Hombre</sexo>
+            <telefono>123456789</telefono>
+        </datos>
+        <uso>
+            <redes>
+                <red>Instagram</red>
+                <red>Twitter</red>
+                <red>Facebook</red>
+            </redes>
+            <dispositivo>Ordenador</dispositivo>
+        </uso>
+        <opinion>
+            <color>#000000</color>
+            <adiccion value="10"/>
+            <sugerencia>Escribir sugerencia</sugerencia>
+        </opinion>
+    </formulario>
+</usoredes>
+

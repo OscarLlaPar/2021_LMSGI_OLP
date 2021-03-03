@@ -9,7 +9,7 @@ and open the template in the editor.
 
 <recetas
     xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
-    xsi:noNamespaceSchemaLocation='Schema10.xsd'>
+    xsi:noNamespaceSchemaLocation='Schema12.xsd'>
     <receta plato="primero">
         <nombre>Risotto milanesa</nombre>
         <descripcion>Pues un risotto</descripcion>

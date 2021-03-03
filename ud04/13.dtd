@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+    TODO define vocabulary identification
+    PUBLIC ID: -//vendor//vocabulary//EN
+    SYSTEM ID: http://server/path/13.dtd
+
+-->
+
+<!--
+    An example how to use this DTD from your XML document:
+
+    <?xml version="1.0"?>
+
+    <!DOCTYPE usoredes SYSTEM "13.dtd">
+
+    <usoredes>
+    ...
+    </usoredes>
+-->
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT usoredes (formulario)*>
+<!ATTLIST usoredes
+    xmlns:xsi CDATA #IMPLIED
+    xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
+<!ELEMENT formulario (datos,uso,opinion)>
+<!ELEMENT datos (nombre,apellidos,localidad,sexo?,telefono)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT localidad (#PCDATA)>
+<!ATTLIST localidad
+    provincia CDATA #IMPLIED>
+<!ELEMENT sexo (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT uso (redes,dispositivo)>
+<!ELEMENT redes (red)+>
+<!ELEMENT red (#PCDATA)>
+<!ELEMENT dispositivo (#PCDATA)>
+<!ELEMENT opinion (color,adiccion,sugerencia)>
+<!ELEMENT color (#PCDATA)>
+<!ELEMENT adiccion EMPTY>
+<!ATTLIST adiccion
+    value CDATA #IMPLIED>
+<!ELEMENT sugerencia (#PCDATA)>

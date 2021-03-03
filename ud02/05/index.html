@@ -4,137 +4,133 @@ Fecha de creación: 22/10/2020
 Modificaciones: 27/10/2020
 				28/10/2020
 Última modificación:29/10/2020-->
-	<html lang="es">
-		<head>
-			<meta charset="utf-8">
-			<title>HTML 05 Óscar Llamas Parra</title>
-			<style>
-				legend {font-size:24px;
-						font-family:verdana;
-						color:white;
-				}
-			</style>
-		</head>
-		<body style="background-color: black">
-			<h1 style="text-align:center; color:white">Plantilla de Formulario</h1>
-			<h2 style="text-align:center; color:white">Óscar Llamas Parra</h2>
-			<form action="registro.php">
-				<fieldset style="background-color: #8CB8E1">
-					<legend style="background-color: #936EE1"><em>Datos Sociodemográficos</em></legend>
-					<table>
-						<tr>
-							<td><label for="dpnombre"><strong>Nombre:</strong></label></td>
-							<td><label for="dpapellidos"><strong>Apellidos:</strong></label></td>
-							<td><label for="dptelefono"><strong>Teléfono:</strong></label></td>
-							<td><label for="dpsexo"><strong>Sexo:</strong></label></td>
-						</tr>
-						<tr>
-							<td><input name="nombre" type="text" id="dpnombre" required></td>
-							<td><input name="apellidos" type="text" id="dpapellidos" required></td>
-							<td><input name="telefono" type="tel" id="dptelefono" pattern="[6-7]{1}[0-9]{8}" placeholder="000000000" required></td>
-							<td><input list="sexos" name="sexo" id="dpsexo" placeholder="Seleccione sexo" required>
-								<datalist id="sexos">
-									<option value="Hombre"></option>
-									<option value="Mujer"></option>
-									<option value="Otro"></option>
-									<option value="No especificar"></option>
-								</datalist>
-							</td>
-						</tr>
-						<tr>
-							
-							<td><label for="dplocalidad"><strong>Localidad:</strong></label></td>
-							<td><label for="dpprovincia"><strong>Provincia:</strong></label></td>
-							<td><label for="dpcalle"><strong>Calle:</strong></label></td>
-							<td><label for="dpnumero">Número:</label></td>
-						</tr>
-						<tr>
-							
-							<td><input name="localidad" type="text" id="dplocalidad" required></td>
-							<td><input list="provincias" name="provincia" id="dpprovincia" placeholder="Seleccione una provincia" required>
-								<datalist id="provincias">
-									<option value="Ávila"></option>
-									<option value="Burgos"></option>
-									<option value="León"></option>
-									<option value="Palencia"></option>
-									<option value="Salamanca"></option>
-									<option value="Segovia"></option>
-									<option value="Soria"></option>
-									<option value="Valladolid"></option>
-									<option value="Zamora"></option>	
-								</datalist>
-							</td>
-							<td><input name="calle" type="text" id="dpcalle" placeholder="C/..."></td>
-							<td><input name="numero" type="text" id="dpnumero"></td>
-						</tr>
-					</table>
-					<p><input name="muestra" type="hidden" id="fdata" value="100"></p>
-				</fieldset>
-				<fieldset style="background-color: #65A2DB">
-					<legend style="background-color: #7748DB"><em>Uso de tecnologías</em></legend>
-					<p><label for="usohora"><strong>¿A qué hora utilizas más Internet?</strong></label></p>
-					<p><input name="hora" type="time" id="usohora" required></p>
-					<p><label for="usomes">¿En qué mes del año utilizas más Internet?</label></p>
-					<p><input name="mes" type="month" id="usomes"></p>
-					<p><label for="usored"><strong>¿Qué red social utilizas más?</strong></label></p>
-					<p><select id="usored" required multiple>
-						<option value="instagram">Instagram</option>
-						<option value="twitter">Twitter</option>
-						<option value="facebook">Facebook</option>
-						<option value="otra">Otra</option>
-					</select></p>
-					<p><label for="usosemana">Si utilizas Instagram ve a Configuración>Estadísticas. ¿En qué semana has tenido mayor actividad?</label></p>
-					<p><input name="semana" type="week" id="usosemana"></p>
-					<p><label for="usoseg"><strong>¿Cuántos amigos/seguidores tienes en tu red social principal?</strong></label></p>
-					<p><input name="seguidores" type="number" id="usoseg" placeholder="Introduce número" required></p>
-					<p><label for="usolink">Introduce el link a tu red social principal:</label></p>
-					<p><input name="enlace" type="url" id="usolink" placeholder="http://..."></p>
-					<p><label for="usodoc">Introduce documento con capturas de configuración de tu red social principal:</label></p>
-					<p><input name="documento" type="file" id="usodoc"></p>
-					<p><label for="usoimagen">Introduce tu foto de perfil en tu red social principal:</label></p>
-					<p><input name="imagen" type="image" id="usoimagen" alt="Foto de Perfil"></p>
-					<p><label for="usobuscar">Busca tu nombre de usuario en el buscador:</label></p>
-					<p><input name="buscador" type="search" id="usobuscar" placeholder="Buscar..."></p>
-					<table>
-						<tr>
-							<td colspan="3">Indica los sitios web a los que sueles acceder:</td>
-						</tr>
-						<tr>
-							<td><label for="webinsta"><input name="instagram" type="checkbox" id="webinsta">Instagram</label></td>
-							<td><label for="webtw"><input name="twitter" type="checkbox" id="webtw">Twitter</label></td>
-							<td><label for="webface"><input name="facebook" type="checkbox" id="webface">Facebook</label></td>
-						</tr>
-						<tr>
-							<td><label for="webyt"><input name="youtube" type="checkbox" id="webyt">YouTube</label></td>
-							<td><label for="webtwi"><input name="twitch" type="checkbox" id="webtwi">Twitch</label></td>
-							<td><label for="webred"><input name="reddit" type="checkbox" id="webred">Reddit</label></td>
-						</tr>
-					</table>
-					<p>¿Desde qué dispositivo accedes más a Internet?</p>
-					<p><label for="usodispc"><input name="dispositivo" type="radio" id="usodispc" value="1">Ordenador</label></p>
-					<p><label for="usodistab"><input name="dispositivo" type="radio" id="usodistab" value="2">Tablet</label></p>
-					<p><label for="usodismov"><input name="dispositivo" type="radio" id="usodismov" value="3">Móvil</label></p>
-					<p><label for="usodiscon"><input name="dispositivo" type="radio" id="usodiscon" value="4">Consola</label></p>
-					<p><label for="usodisotro"><input name="dispositivo" type="radio" id="usodisotro" value="5">Otro</label></p>
-					
-					
-				</fieldset>
-				<fieldset style="background-color: #637CD6">
-					<legend style="background-color: #5E39AD"><em>Opinión</em></legend>
-					<p><label for="opcolor">¿Qué color prefieres en la interfaz de una web?</label></p>
-					<p><input name="color" type="color" id="opcolor"></p>
-					<p><label for="usorange">¿Hasta qué punto consideras que estás enganchado a Internet?</label></p>
-					<p><input name="rango" type="range" id="usorange" max="7" value="0"></p>
-					<p><label for="opsug">Sugerencias...</label></p>
-					<p><textarea name="sugerencias" id="opsug" placeholder="Escriba sugerencias..."></textarea></p>
-					
-				</fieldset>
-				<fieldset style="background-color: #939FCC">
-					<p><label for="fpass"><strong>Contraseña para enviar respuestas anónimamente:</strong></label></p>
-					<p><input name="password" type="password" id="fpass" required></p>
-					<p><label for="Enviar"><input name="enviarformulario" type="submit" id="Enviar" value="Enviar Formulario"></label></p>
-					<p><label for="vaciar"><input name="vaciarformulario" type="reset" id="vaciar" value="Vaciar Formulario"></label></p>
-				</fieldset>
-			</form>
-		</body>
-	</html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML 05 Óscar Llamas Parra</title>
+        <style>
+            legend {font-size:24px;
+                            font-family:verdana;
+                            color:white;
+            }
+        </style>
+    </head>
+    <body style="background-color: black">
+        <h1 style="text-align:center; color:white">Plantilla de Formulario</h1>
+        <h2 style="text-align:center; color:white">Óscar Llamas Parra</h2>
+        <form action="registro.php">
+            <fieldset style="background-color: #8CB8E1">
+                    <legend style="background-color: #936EE1"><em>Datos Sociodemográficos</em></legend>
+                    <table>
+                        <tr>
+                            <td><label for="dpnombre"><strong>Nombre:</strong></label></td>
+                            <td><label for="dpapellidos"><strong>Apellidos:</strong></label></td>
+                            <td><label for="dptelefono"><strong>Teléfono:</strong></label></td>
+                            <td><label for="dpsexo"><strong>Sexo:</strong></label></td>
+                        </tr>
+                        <tr>
+                            <td><input name="nombre" type="text" id="dpnombre" required></td>
+                            <td><input name="apellidos" type="text" id="dpapellidos" required></td>
+                            <td><input name="telefono" type="tel" id="dptelefono" pattern="[6-7]{1}[0-9]{8}" placeholder="000000000" required></td>
+                            <td><input list="sexos" name="sexo" id="dpsexo" placeholder="Seleccione sexo" required>
+                                <datalist id="sexos">
+                                    <option value="Hombre"></option>
+                                    <option value="Mujer"></option>
+                                    <option value="Otro"></option>
+                                    <option value="No especificar"></option>
+                                </datalist>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="dplocalidad"><strong>Localidad:</strong></label></td>
+                            <td><label for="dpprovincia"><strong>Provincia:</strong></label></td>
+                            <td><label for="dpcalle"><strong>Calle:</strong></label></td>
+                            <td><label for="dpnumero">Número:</label></td>
+                        </tr>
+                        <tr>
+                            <td><input name="localidad" type="text" id="dplocalidad" required></td>
+                            <td><input list="provincias" name="provincia" id="dpprovincia" placeholder="Seleccione una provincia" required>
+                                <datalist id="provincias">
+                                    <option value="Ávila"></option>
+                                    <option value="Burgos"></option>
+                                    <option value="León"></option>
+                                    <option value="Palencia"></option>
+                                    <option value="Salamanca"></option>
+                                    <option value="Segovia"></option>
+                                    <option value="Soria"></option>
+                                    <option value="Valladolid"></option>
+                                    <option value="Zamora"></option>	
+                                </datalist>
+                            </td>
+                            <td><input name="calle" type="text" id="dpcalle" placeholder="C/..."></td>
+                            <td><input name="numero" type="text" id="dpnumero"></td>
+                        </tr>
+                    </table>
+                    <p><input name="muestra" type="hidden" id="fdata" value="100"></p>
+            </fieldset>
+            <fieldset style="background-color: #65A2DB">
+                <legend style="background-color: #7748DB"><em>Uso de tecnologías</em></legend>
+                <p><label for="usohora"><strong>¿A qué hora utilizas más Internet?</strong></label></p>
+                <p><input name="hora" type="time" id="usohora" required></p>
+                <p><label for="usomes">¿En qué mes del año utilizas más Internet?</label></p>
+                <p><input name="mes" type="month" id="usomes"></p>
+                <p><label for="usored"><strong>¿Qué red social utilizas más?</strong></label></p>
+                <p><select id="usored" required multiple>
+                    <option value="instagram">Instagram</option>
+                    <option value="twitter">Twitter</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="otra">Otra</option>
+                </select></p>
+                <p><label for="usosemana">Si utilizas Instagram ve a Configuración>Estadísticas. ¿En qué semana has tenido mayor actividad?</label></p>
+                <p><input name="semana" type="week" id="usosemana"></p>
+                <p><label for="usoseg"><strong>¿Cuántos amigos/seguidores tienes en tu red social principal?</strong></label></p>
+                <p><input name="seguidores" type="number" id="usoseg" placeholder="Introduce número" required></p>
+                <p><label for="usolink">Introduce el link a tu red social principal:</label></p>
+                <p><input name="enlace" type="url" id="usolink" placeholder="http://..."></p>
+                <p><label for="usodoc">Introduce documento con capturas de configuración de tu red social principal:</label></p>
+                <p><input name="documento" type="file" id="usodoc"></p>
+                <p><label for="usoimagen">Introduce tu foto de perfil en tu red social principal:</label></p>
+                <p><input name="imagen" type="image" id="usoimagen" alt="Foto de Perfil"></p>
+                <p><label for="usobuscar">Busca tu nombre de usuario en el buscador:</label></p>
+                <p><input name="buscador" type="search" id="usobuscar" placeholder="Buscar..."></p>
+                <table>
+                    <tr>
+                        <td colspan="3">Indica los sitios web a los que sueles acceder:</td>
+                    </tr>
+                    <tr>
+                        <td><label for="webinsta"><input name="instagram" type="checkbox" id="webinsta">Instagram</label></td>
+                        <td><label for="webtw"><input name="twitter" type="checkbox" id="webtw">Twitter</label></td>
+                        <td><label for="webface"><input name="facebook" type="checkbox" id="webface">Facebook</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="webyt"><input name="youtube" type="checkbox" id="webyt">YouTube</label></td>
+                        <td><label for="webtwi"><input name="twitch" type="checkbox" id="webtwi">Twitch</label></td>
+                        <td><label for="webred"><input name="reddit" type="checkbox" id="webred">Reddit</label></td>
+                    </tr>
+                </table>
+                <p>¿Desde qué dispositivo accedes más a Internet?</p>
+                <p><label for="usodispc"><input name="dispositivo" type="radio" id="usodispc" value="1">Ordenador</label></p>
+                <p><label for="usodistab"><input name="dispositivo" type="radio" id="usodistab" value="2">Tablet</label></p>
+                <p><label for="usodismov"><input name="dispositivo" type="radio" id="usodismov" value="3">Móvil</label></p>
+                <p><label for="usodiscon"><input name="dispositivo" type="radio" id="usodiscon" value="4">Consola</label></p>
+                <p><label for="usodisotro"><input name="dispositivo" type="radio" id="usodisotro" value="5">Otro</label></p>
+            </fieldset>
+            <fieldset style="background-color: #637CD6">
+                <legend style="background-color: #5E39AD"><em>Opinión</em></legend>
+                <p><label for="opcolor">¿Qué color prefieres en la interfaz de una web?</label></p>
+                <p><input name="color" type="color" id="opcolor"></p>
+                <p><label for="usorange">¿Hasta qué punto consideras que estás enganchado a Internet?</label></p>
+                <p><input name="rango" type="range" id="usorange" max="7" value="0"></p>
+                <p><label for="opsug">Sugerencias...</label></p>
+                <p><textarea name="sugerencias" id="opsug" placeholder="Escriba sugerencias..."></textarea></p>
+
+            </fieldset>
+            <fieldset style="background-color: #939FCC">
+                <p><label for="fpass"><strong>Contraseña para enviar respuestas anónimamente:</strong></label></p>
+                <p><input name="password" type="password" id="fpass" required></p>
+                <p><label for="Enviar"><input name="enviarformulario" type="submit" id="Enviar" value="Enviar Formulario"></label></p>
+                <p><label for="vaciar"><input name="vaciarformulario" type="reset" id="vaciar" value="Vaciar Formulario"></label></p>
+            </fieldset>
+        </form>
+    </body>
+</html>
