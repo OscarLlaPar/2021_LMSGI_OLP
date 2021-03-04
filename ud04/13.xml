@@ -23,6 +23,9 @@ and open the template in the editor.
                 <red>Twitter</red>
                 <red>Facebook</red>
             </redes>
+            <masusada>
+                <instagram horasdia="5"/>
+            </masusada>
             <dispositivo>Ordenador</dispositivo>
         </uso>
         <opinion>

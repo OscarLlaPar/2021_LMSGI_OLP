@@ -33,9 +33,22 @@
     provincia CDATA #IMPLIED>
 <!ELEMENT sexo (#PCDATA)>
 <!ELEMENT telefono (#PCDATA)>
-<!ELEMENT uso (redes,dispositivo)>
+<!ELEMENT uso (redes,masusada,dispositivo)>
 <!ELEMENT redes (red)+>
 <!ELEMENT red (#PCDATA)>
+<!ELEMENT masusada (instagram|twitter|facebook|youtube|twitch|reddit)>
+<!ELEMENT instagram EMPTY>
+<!ATTLIST instagram horasdia CDATA #REQUIRED>
+<!ELEMENT twitter EMPTY>
+<!ATTLIST twitter horasdia CDATA #REQUIRED>
+<!ELEMENT facebook EMPTY>
+<!ATTLIST facebook horasdia CDATA #REQUIRED>
+<!ELEMENT youtube EMPTY>
+<!ATTLIST youtube horasdia CDATA #REQUIRED>
+<!ELEMENT twitch EMPTY>
+<!ATTLIST twitch horasdia CDATA #REQUIRED>
+<!ELEMENT reddit EMPTY>
+<!ATTLIST reddit horasdia CDATA #REQUIRED>
 <!ELEMENT dispositivo (#PCDATA)>
 <!ELEMENT opinion (color,adiccion,sugerencia)>
 <!ELEMENT color (#PCDATA)>
