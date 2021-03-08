@@ -35,7 +35,7 @@ and open the template in the editor.
                                             <xs:complexType>
                                                 <xs:simpleContent>
                                                     <xs:extension base="xs:string">
-                                                        <xs:attribute name="provincia">
+                                                        <xs:attribute name="provincia" use="required">
                                                             <xs:simpleType>
                                                                 <xs:restriction base="xs:string">
                                                                     <xs:pattern value="Leon|Palencia|Burgos|Zamora|Valladolid|Soria|Salamanca|Avila|Segovia"/>
@@ -79,6 +79,84 @@ and open the template in the editor.
                                                 </xs:sequence>
                                             </xs:complexType>
                                         </xs:element>
+                                        <xs:element name="masusada">
+                                            <xs:complexType>
+                                                <xs:choice>
+                                                    <xs:element name="instagram">
+                                                        <xs:complexType>
+                                                            <xs:attribute name="horasdia" use="required">
+                                                                <xs:simpleType>
+                                                                    <xs:restriction base="xs:positiveInteger">
+                                                                        <xs:minInclusive value="1"/>
+                                                                        <xs:maxInclusive value="24"/>
+                                                                    </xs:restriction>
+                                                                </xs:simpleType>
+                                                            </xs:attribute>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="twitter">
+                                                        <xs:complexType>
+                                                            <xs:attribute name="horasdia" use="required">
+                                                                <xs:simpleType>
+                                                                    <xs:restriction base="xs:positiveInteger">
+                                                                        <xs:minInclusive value="1"/>
+                                                                        <xs:maxInclusive value="24"/>
+                                                                    </xs:restriction>
+                                                                </xs:simpleType>
+                                                            </xs:attribute>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="facebook">
+                                                        <xs:complexType>
+                                                            <xs:attribute name="horasdia" use="required">
+                                                                <xs:simpleType>
+                                                                    <xs:restriction base="xs:positiveInteger">
+                                                                        <xs:minInclusive value="1"/>
+                                                                        <xs:maxInclusive value="24"/>
+                                                                    </xs:restriction>
+                                                                </xs:simpleType>
+                                                            </xs:attribute>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="youtube">
+                                                        <xs:complexType>
+                                                            <xs:attribute name="horasdia" use="required">
+                                                                <xs:simpleType>
+                                                                    <xs:restriction base="xs:positiveInteger">
+                                                                        <xs:minInclusive value="1"/>
+                                                                        <xs:maxInclusive value="24"/>
+                                                                    </xs:restriction>
+                                                                </xs:simpleType>
+                                                            </xs:attribute>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="twitch">
+                                                        <xs:complexType>
+                                                            <xs:attribute name="horasdia" use="required">
+                                                                <xs:simpleType>
+                                                                    <xs:restriction base="xs:positiveInteger">
+                                                                        <xs:minInclusive value="1"/>
+                                                                        <xs:maxInclusive value="24"/>
+                                                                    </xs:restriction>
+                                                                </xs:simpleType>
+                                                            </xs:attribute>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="reddit">
+                                                        <xs:complexType>
+                                                            <xs:attribute name="horasdia" use="required">
+                                                                <xs:simpleType>
+                                                                    <xs:restriction base="xs:positiveInteger">
+                                                                        <xs:minInclusive value="1"/>
+                                                                        <xs:maxInclusive value="24"/>
+                                                                    </xs:restriction>
+                                                                </xs:simpleType>
+                                                            </xs:attribute>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:choice>
+                                            </xs:complexType>
+                                        </xs:element>
                                         <xs:element name="dispositivo">
                                             <xs:simpleType>
                                                 <xs:restriction base="xs:string">
@@ -101,7 +179,7 @@ and open the template in the editor.
                                         </xs:element>
                                         <xs:element name="adiccion">
                                             <xs:complexType>
-                                                <xs:attribute name="value">
+                                                <xs:attribute name="value" default="5">
                                                     <xs:simpleType>
                                                         <xs:restriction base="xs:integer">
                                                             <xs:minInclusive value="0"/>

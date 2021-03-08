@@ -13,13 +13,7 @@ and open the template in the editor.
             <xs:sequence>
                 <xs:element name="receta" maxOccurs="unbounded">
                     <xs:complexType>
-                        <xs:attribute name="plato" use="required">
-                            <xs:simpleType>
-                                <xs:restriction base="xs:string">
-                                    <xs:pattern value="primero|segundo|postre"/>
-                                </xs:restriction>
-                            </xs:simpleType>
-                        </xs:attribute>
+                        
                         <xs:sequence>
                             <xs:element name="nombre">
                                 <xs:simpleType>
@@ -38,13 +32,13 @@ and open the template in the editor.
                             <xs:element name="tiempo">
                                 <xs:complexType>
                                     <xs:attribute name="preparacion" type="xs:positiveInteger" use="required"/>
-                                    <xs:attribute name="coccion" type="xs:positiveInteger" minOccurs="0"/>
+                                    <xs:attribute name="coccion" type="xs:positiveInteger"/>
                                 </xs:complexType>
                             </xs:element>
                             <xs:element name="ingredientes">
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element name="ingrediente">
+                                        <xs:element name="ingrediente" maxOccurs="unbounded">
                                             <xs:complexType>
                                                 <xs:sequence>
                                                     <xs:element name="nombre">
@@ -54,7 +48,7 @@ and open the template in the editor.
                                                             </xs:restriction>
                                                         </xs:simpleType>
                                                     </xs:element>
-                                                    <xs:element nombre="cantidad">
+                                                    <xs:element name="cantidad" minOccurs="0">
                                                         <xs:complexType>
                                                             <xs:simpleContent>
                                                                 <xs:extension base="xs:positiveInteger">
@@ -89,6 +83,13 @@ and open the template in the editor.
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
+                        <xs:attribute name="plato" use="required">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="primero|segundo|postre"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>
