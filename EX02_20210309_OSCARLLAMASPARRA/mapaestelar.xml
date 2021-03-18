@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapa SYSTEM "mapaestelar.dtd">
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<mapa
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='mapaestelar.xsd'>
+    <constelacion nombreLatin="UrsaMaior">
+        <nombre>Osa Mayor</nombre>
+        <superficie>1279.7</superficie>
+        <estrellas nestrellas="209">
+            <asterismo>7</asterismo>
+            <masBrillante luminosidad="1.77">Alioth</masBrillante>
+        </estrellas>
+        <objetos>
+            <cumulo>false</cumulo>
+            <nebulosa>true</nebulosa>
+            <galaxia>true</galaxia>
+            <cuasar>false</cuasar>
+            <lluviameteo>Kappa Ursa Mayóridas</lluviameteo>
+            <lluviameteo>Lambda Ursa Mayóridas</lluviameteo>
+            <lluviameteo>Psi Ursa Mayóridas</lluviameteo>
+            <lluviameteo>Ursa Mayóridas de octubre</lluviameteo>
+        </objetos>
+        <colindantes>
+            <nombre>Bootes</nombre>
+            <nombre>Camelopardalis</nombre>
+            <nombre>Canes Venatici</nombre>
+            <nombre>Draco</nombre>
+            <nombre>Leo</nombre>
+            <nombre>Leo Minor</nombre>
+            <nombre>Lynx</nombre>
+        </colindantes>
+        <observacion>
+            <hemisferio>Norte</hemisferio>
+            <mes>04</mes>
+            <hora>21:00:00</hora>
+        </observacion>
+    </constelacion>
+    <estrella>
+        <nombre>Alioth</nombre>
+        <const>Osa Mayor</const>
+        <distancia medida="años luz">81</distancia>
+        <luminosidad medida="soles">108</luminosidad>
+        <temperatura medida="K">9400</temperatura>
+        <masa medida="soles">3</masa>
+    </estrella>
+</mapa>

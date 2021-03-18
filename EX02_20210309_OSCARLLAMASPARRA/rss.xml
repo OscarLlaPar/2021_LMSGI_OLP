@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0">
+    <channel>
+        <title>Mapa Estelar</title>
+        <link>https://mapaestelar.com</link>
+        <description>
+            <![CDATA[
+                    <h1>MAPA ESTELAR</h1>
+                    <p>Noticias sobre planetas y astros</p>
+            ]]>
+        </description>
+        <category>Ciencia</category>
+        <language>es-es</language>
+        <copyright>2021 Óscar Llamas Parra </copyright>
+        <item>
+            <title>Mercurio</title>
+            <link>https://mapaestelar.com/mercurio.html</link>
+            <guid isPermaLink="true">https://mapaestelar.com/mercurio.html</guid>
+            <description>
+                <![CDATA[
+                        <h1>MERCURIO</h1>
+                        <p>Primer planeta del sistema solar. Tiene el color rojizo o marrón</p>
+                ]]>
+            </description>
+            <author>johnpaso@gmail.com</author>
+        </item>
+        <item>
+            <title>Venus</title>
+            <link>https://mapaestelar.com/venus.html</link>
+            <guid isPermaLink="true">https://mapaestelar.com/venus.html</guid>
+            <description>
+                <![CDATA[
+                        <h1>VENUS</h1>
+                        <p>Segundo planeta del sistema solar. Es azulado y comparte nombre con la diosa</p>
+                ]]>
+            </description>
+            <author>richardblu@gmail.com</author>
+        </item>
+        <item>
+            <title>Tierra</title>
+            <link>https://mapaestelar.com/tierra.html</link>
+            <guid isPermaLink="true">https://mapaestelar.com/tierra.html</guid>
+            <description>
+                <![CDATA[
+                        <h1>TIERRA</h1>
+                        <p>Tercer planeta del sistema solar. Hogar de los humanos. 
+                        Único planeta en el que se cree que hay vida. Contiene agua.</p>
+                ]]>
+            </description>
+            <author>marypatio@gmail.com</author>
+        </item>
+    </channel>
+</rss>
+

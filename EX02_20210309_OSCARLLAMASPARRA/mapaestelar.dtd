@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+    TODO define vocabulary identification
+    PUBLIC ID: -//vendor//vocabulary//EN
+    SYSTEM ID: http://server/path/mapaestelar.dtd
+
+-->
+
+
+<!ELEMENT mapa (constelacion+,estrella+)>
+<!ATTLIST mapa
+    xmlns:xsi CDATA #IMPLIED
+    xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
+<!ELEMENT constelacion (nombre,superficie,estrellas,objetos,colindantes,observacion)>
+<!ATTLIST constelacion
+    nombreLatin ID #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT superficie (#PCDATA)>
+<!ELEMENT estrellas (asterismo,masBrillante)>
+<!ATTLIST estrellas
+    nestrellas CDATA #REQUIRED>
+<!ELEMENT asterismo (#PCDATA)>
+<!ELEMENT masBrillante (#PCDATA)>
+<!ATTLIST masBrillante
+    luminosidad CDATA #REQUIRED>
+<!ELEMENT objetos (cumulo,nebulosa,galaxia,cuasar,lluviameteo*)>
+<!ELEMENT cumulo (#PCDATA)>
+<!ELEMENT nebulosa (#PCDATA)>
+<!ELEMENT galaxia (#PCDATA)>
+<!ELEMENT cuasar (#PCDATA)>
+<!ELEMENT lluviameteo (#PCDATA)>
+<!ELEMENT colindantes (nombre)*>
+<!ELEMENT observacion (hemisferio,mes,hora)>
+<!ELEMENT hemisferio (#PCDATA)>
+<!ELEMENT mes (#PCDATA)>
+<!ELEMENT hora (#PCDATA)>
+<!ELEMENT estrella (nombre,const,distancia,luminosidad,temperatura,masa)>
+<!ELEMENT const (#PCDATA)>
+<!ELEMENT distancia (#PCDATA)>
+<!ATTLIST distancia
+    medida CDATA "años luz">
+<!ELEMENT luminosidad (#PCDATA)>
+<!ATTLIST luminosidad
+    medida CDATA #FIXED "soles">
+<!ELEMENT temperatura (#PCDATA)>
+<!ATTLIST temperatura
+    medida  CDATA "K">
+<!ELEMENT masa (#PCDATA)>
+<!ATTLIST masa
+    medida CDATA "soles">
