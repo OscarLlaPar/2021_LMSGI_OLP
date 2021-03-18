@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE horario SYSTEM "04.dtd">
 <!--
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -6,72 +7,92 @@ and open the template in the editor.
 -->
 
 
-<horario>
+<horario
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='Schema04.xsd'>
     <hora entrada="08:30" salida="09:20">
-            <dia_sem dia="lunes" hora="1">Entornos de Desarrollo
+            <dia_sem dia="lunes" hora="1">
+                <modulo>Entornos de Desarrollo</modulo>
                 <profesor>MUP</profesor>
             </dia_sem>
-            <dia_sem dia="martes" hora="2">Bases de Datos
+            <dia_sem dia="martes" hora="2">
+                <modulo>Bases de Datos</modulo>
                 <profesor>HRO</profesor>
             </dia_sem>
-            <dia_sem dia="miercoles" hora="2">Programación
+            <dia_sem dia="miercoles" hora="2">
+                <modulo>Programación</modulo>
                 <profesor>ACF</profesor>
             </dia_sem>
-            <dia_sem dia="jueves" hora="2">Lenguaje de Marcas y Sistemas de Gestion Informática
+            <dia_sem dia="jueves" hora="2">
+                <modulo>Lenguaje de Marcas y Sistemas de Gestion Informática</modulo>
                 <profesor>ARN</profesor>
                 <profesor>HRO</profesor>
             </dia_sem>
-            <dia_sem dia="viernes" hora="1">Entornos de Desarrollo
+            <dia_sem dia="viernes" hora="1">
+                <modulo>Entornos de Desarrollo</modulo>
                 <profesor>MUP</profesor>
             </dia_sem>
         </hora>
         <hora entrada="09:20" salida="10:10">
-            <dia_sem dia="lunes" hora="2">Sistemas Informáticos
+            <dia_sem dia="lunes" hora="2">
+                <modulo>Sistemas Informáticos</modulo>
                 <profesor>NCB</profesor>
             </dia_sem>
-            <dia_sem dia="viernes" hora="2">Sistemas Informáticos
+            <dia_sem dia="viernes" hora="2">
+                <modulo>Sistemas Informáticos</modulo>
                 <profesor>NCB</profesor>
             </dia_sem>
         </hora>
         <hora entrada="10:10" salida="11:00">
-            <dia_sem dia="martes" hora="2">Programación
+            <dia_sem dia="martes" hora="2">
+                <modulo>Programación</modulo>
                 <profesor>ACF</profesor>
             </dia_sem>
-            <dia_sem dia="miercoles" hora="1">Formación y Orientación Laboral
+            <dia_sem dia="miercoles" hora="1">
+                <modulo>Formación y Orientación Laboral</modulo>
                 <profesor>MAM</profesor>
             </dia_sem>
-            <dia_sem dia="jueves" hora="2">Programación
+            <dia_sem dia="jueves" hora="2">
+                <modulo>Programación</modulo>
                 <profesor>ACF</profesor>
             </dia_sem>
         </hora>
         <hora entrada="11:00" salida="11:50">
-            <dia_sem dia="lunes" hora="2">Programación
+            <dia_sem dia="lunes" hora="2">
+                <modulo>Programación</modulo>
                 <profesor>ACF</profesor>
             </dia_sem>
-            <dia_sem dia="miercoles" hora="2">Bases de Datos
+            <dia_sem dia="miercoles" hora="2">
+                <modulo>Bases de Datos</modulo>
                 <profesor>HRO</profesor>
             </dia_sem>
-            <dia_sem dia="viernes" hora="1">Formación y Orientación Laboral
+            <dia_sem dia="viernes" hora="1">
+                <modulo>Formación y Orientación Laboral</modulo>
                 <profesor>MAM</profesor>
             </dia_sem>
         </hora>
         <hora entrada="12:15" salida="13:05">
-            <dia_sem dia="martes" hora="2">Lenguaje de Marcas y Sistemas de Gestion Informática
+            <dia_sem dia="martes" hora="2">
+                <modulo>Lenguaje de Marcas y Sistemas de Gestion Informática</modulo>
                 <profesor>ARN</profesor>
                 <profesor>HRO</profesor>
             </dia_sem>
-            <dia_sem dia="jueves" hora="2">Sistemas Informáticos
+            <dia_sem dia="jueves" hora="2">
+                <modulo>Sistemas Informáticos</modulo>
                 <profesor>NCB</profesor>
             </dia_sem>
-            <dia_sem dia="viernes" hora="2">Bases de Datos
+            <dia_sem dia="viernes" hora="2">
+                <modulo>Bases de Datos</modulo>
                 <profesor>HRO</profesor>
             </dia_sem>
         </hora>
         <hora entrada="13:05" salida="13:55">
-            <dia_sem dia="lunes" hora="1">Formación y Orientación Laboral
+            <dia_sem dia="lunes" hora="1">
+                <modulo>Formación y Orientación Laboral</modulo>
                 <profesor>MAM</profesor>
             </dia_sem>
-            <dia_sem dia="miercoles" hora="1">Entornos de Desarrollo
+            <dia_sem dia="miercoles" hora="1">
+                <modulo>Entornos de Desarrollo</modulo>
                 <profesor>MUP</profesor>
             </dia_sem>
         </hora>

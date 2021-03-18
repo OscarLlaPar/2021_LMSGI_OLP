@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+    TODO define vocabulary identification
+    PUBLIC ID: -//vendor//vocabulary//EN
+    SYSTEM ID: http://server/path/04.dtd
+
+-->
+
+
+<!ELEMENT horario (hora)+>
+<!ATTLIST horario
+    xmlns:xsi CDATA #IMPLIED
+    xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
+<!ELEMENT hora (dia_sem)+>
+<!ATTLIST hora
+    entrada CDATA #IMPLIED
+    salida CDATA #IMPLIED>
+<!ELEMENT dia_sem (modulo,profesor+)>
+<!ATTLIST dia_sem
+    dia CDATA #IMPLIED
+    hora CDATA #IMPLIED>
+<!ELEMENT modulo (#PCDATA)>
+<!ELEMENT profesor (#PCDATA)>
