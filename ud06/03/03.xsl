@@ -37,7 +37,7 @@
                         font-size: 10px;
                     }
                     footer{
-                        font-size: 6px;    
+                        font-size: 10px;    
                         text-align: center;
                     }
                 </style>

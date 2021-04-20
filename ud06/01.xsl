@@ -28,20 +28,20 @@
                         text-decoration:underline;
                     }
                     footer{
-                        font-size: 6px;    
+                        font-size: 8px;    
                         text-align: center;
                     }
                     ul{
                        list-style: none; 
                     }
                     ul li{
-                        font-size: 12px;
+                        font-size: 16px;
                     }
                     ol li{
-                        font-size: 10px;
+                        font-size: 14px;
                     }
                     p{
-                        font-size: 8px;
+                        font-size: 12px;
                         margin: 1px;
                     }
                     

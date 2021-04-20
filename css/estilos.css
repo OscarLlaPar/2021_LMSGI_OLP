@@ -66,6 +66,12 @@ h2{
 #u4{
     background-color: #400400;
 }
+#u5{
+    background-color: #595959;
+}
+#u6{
+    background-color: #7A7A33;
+}
 #name{
     font-style: italic;
     font-size: 20px;
@@ -87,4 +93,22 @@ h2{
 }
 .sch{
     font-size:8px;
+}
+table{
+    margin-top: 10px;
+    width: 100%;
+}
+table,tr td{
+    border: solid white 1px;
+    border-collapse: collapse;
+}
+td{
+    padding: 5px;
+    width: 10%;
+}
+.tablatitulo{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    width: 60%;
 }
