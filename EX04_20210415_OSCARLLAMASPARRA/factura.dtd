@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+    TODO define vocabulary identification
+    PUBLIC ID: -//vendor//vocabulary//EN
+    SYSTEM ID: http://server/path/factura.dtd
+
+-->
+
+<!ELEMENT factura (datos_emisor, datos_receptor, datos_factura)>
+<!ATTLIST factura
+    n_factura ID #REQUIRED
+    xsi:noNamespaceSchemaLocation CDATA #IMPLIED
+    xmlns:xsi CDATA #IMPLIED
+  >
+<!ELEMENT datos_emisor (nombre, dir, poblacion, provincia, cif, telefono?, fax?)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT dir (#PCDATA)>
+<!ELEMENT poblacion (#PCDATA)>
+<!ATTLIST poblacion
+    cod_postal CDATA #REQUIRED
+  >
+<!ELEMENT provincia (#PCDATA)>
+<!ELEMENT cif (#PCDATA)>
+<!ELEMENT telefono EMPTY>
+<!ELEMENT fax EMPTY>
+<!ELEMENT datos_receptor (nombre, dir_env, poblacion, provincia)>
+<!ATTLIST datos_receptor
+    n_cli ID #REQUIRED
+  >
+<!ELEMENT dir_env (#PCDATA)>
+<!ELEMENT datos_factura (fecha, linea+, base, cuota_iva, total)>
+<!ATTLIST datos_factura
+    n_ped ID #REQUIRED
+    iva CDATA #REQUIRED
+    f_pago (efectivo|tarjeta|plazos) #REQUIRED 
+    moneda CDATA #FIXED "euro"
+  >
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT linea (ref, desc, cant, precio, importe)>
+<!ELEMENT ref (#PCDATA)>
+<!ELEMENT desc (#PCDATA)>
+<!ELEMENT cant (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT importe (#PCDATA)>
+<!ELEMENT base (#PCDATA)>
+<!ELEMENT cuota_iva (#PCDATA)>
+<!ELEMENT total (#PCDATA)>
