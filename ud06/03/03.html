@@ -11,6 +11,10 @@
                         border: solid white 1px;
                         border-collapse: collapse;
                     }
+                    table{
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                    }
                     th,td{
                         padding: 5px;
                     }
@@ -21,69 +25,116 @@
                         font-size: 10px;
                     }
                     footer{
-                        font-size: 6px;    
+                        font-size: 8px;    
                         text-align: center;
+                        padding-top: 20px;
                     }
                 </style>
     </head>
     <body>
         <table>
             <tr>
+                <th>C&oacute;digo del m&oacute;dulo</th><th>Nombre del m&oacute;dulo</th>
+            </tr>
+            <tr>
+                <td>BBDD</td><td>Bases de Datos</td>
+            </tr>
+            <tr>
+                <td>EDD</td><td>Entornos de Desarrollo</td>
+            </tr>
+            <tr>
+                <td>FOL</td><td>Formaci&oacute;n y orientaci&oacute;n laboral</td>
+            </tr>
+            <tr>
+                <td>LMSGI</td><td>Lenguaje de Marcas y Sistemas de Gestion de la Informaci&oacute;n</td>
+            </tr>
+            <tr>
+                <td>PROG</td><td>Programaci&oacute;n</td>
+            </tr>
+            <tr>
+                <td>SINF</td><td>Sistemas de Informaci&oacute;n</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>C&oacute;digo del profesor</th><th>Nombre del profesor</th>
+            </tr>
+            <tr>
+                <td>ACF</td><td>Ambrosio Casado Fernandez</td>
+            </tr>
+            <tr>
+                <td>ARN</td><td>Amor Rodriguez Navarro</td>
+            </tr>
+            <tr>
+                <td>HRO</td><td>Hermelinda Ramos Osorio</td>
+            </tr>
+            <tr>
+                <td>MAM</td><td>Maria del Cielo Alejo Mulas</td>
+            </tr>
+            <tr>
+                <td>MUP</td><td>Marcos Unzueta Puente</td>
+            </tr>
+            <tr>
+                <td>NCB</td><td>Natividad Crespo Belver</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
                 <th></th><th>Lunes</th><th>Martes</th><th>Mi&eacute;rcoles</th><th>Jueves</th><th>Viernes</th>
             </tr>
             <tr>
-                <td>De 08:30 a 09:20</td><td rowspan="1">Entornos de Desarrollo
+                <td>De 08:30 a 09:20</td><td rowspan="1"><abbr title="EDD">Entornos de Desarrollo</abbr>
                     <br>
-                    Marcos Unzueta Puente</td><td rowspan="2">Bases de Datos
+                    <abbr title="MUP">Marcos Unzueta Puente</abbr></td><td rowspan="2"><abbr title="BBDD">Bases de Datos</abbr>
                     <br>
-                    Hermelinda Ramos Osorio</td><td rowspan="2">Programaci&oacute;n
+                    <abbr title="HRO">Hermelinda Ramos Osorio</abbr></td><td rowspan="2"><abbr title="PROG">Programaci&oacute;n</abbr>
                     <br>
-                    Ambrosio Casado Fernandez</td><td rowspan="2">Lenguaje de Marcas y Sistemas de Gestion de la Informaci&oacute;n
+                    <abbr title="ACF">Ambrosio Casado Fernandez</abbr></td><td rowspan="2"><abbr title="LMSGI">Lenguaje de Marcas y Sistemas de Gestion de la Informaci&oacute;n</abbr>
                     <br>
-                    Amor Rodriguez Navarro</td><td rowspan="1">Entornos de Desarrollo
+                    <abbr title="ARN">Amor Rodriguez Navarro</abbr></td><td rowspan="1"><abbr title="EDD">Entornos de Desarrollo</abbr>
                     <br>
-                    Marcos Unzueta Puente</td>
+                    <abbr title="MUP">Marcos Unzueta Puente</abbr></td>
             </tr>
             <tr>
-                <td>De 09:20 a 10:10</td><td rowspan="2">Sistemas de Informaci&oacute;n
+                <td>De 09:20 a 10:10</td><td rowspan="2"><abbr title="SINF">Sistemas de Informaci&oacute;n</abbr>
                     <br>
-                    Natividad Crespo Belver</td><td rowspan="2">Sistemas de Informaci&oacute;n
+                    <abbr title="NCB">Natividad Crespo Belver</abbr></td><td rowspan="2"><abbr title="SINF">Sistemas de Informaci&oacute;n</abbr>
                     <br>
-                    Natividad Crespo Belver</td>
+                    <abbr title="NCB">Natividad Crespo Belver</abbr></td>
             </tr>
             <tr>
-                <td>De 10:10 a 11:00</td><td rowspan="2">Programaci&oacute;n
+                <td>De 10:10 a 11:00</td><td rowspan="2"><abbr title="PROG">Programaci&oacute;n</abbr>
                     <br>
-                    Ambrosio Casado Fernandez</td><td rowspan="1">Formaci&oacute;n y orientaci&oacute;n laboral
+                    <abbr title="ACF">Ambrosio Casado Fernandez</abbr></td><td rowspan="1"><abbr title="FOL">Formaci&oacute;n y orientaci&oacute;n laboral</abbr>
                     <br>
-                    Maria del Cielo Alejo Mulas</td><td rowspan="2">Programaci&oacute;n
+                    <abbr title="MAM">Maria del Cielo Alejo Mulas</abbr></td><td rowspan="2"><abbr title="PROG">Programaci&oacute;n</abbr>
                     <br>
-                    Ambrosio Casado Fernandez</td>
+                    <abbr title="ACF">Ambrosio Casado Fernandez</abbr></td>
             </tr>
             <tr>
-                <td>De 11:00 a 11:50</td><td rowspan="2">Programaci&oacute;n
+                <td>De 11:00 a 11:50</td><td rowspan="2"><abbr title="PROG">Programaci&oacute;n</abbr>
                     <br>
-                    Ambrosio Casado Fernandez</td><td rowspan="2">Bases de Datos
+                    <abbr title="ACF">Ambrosio Casado Fernandez</abbr></td><td rowspan="2"><abbr title="BBDD">Bases de Datos</abbr>
                     <br>
-                    Hermelinda Ramos Osorio</td><td rowspan="1">Formaci&oacute;n y orientaci&oacute;n laboral
+                    <abbr title="HRO">Hermelinda Ramos Osorio</abbr></td><td rowspan="1"><abbr title="FOL">Formaci&oacute;n y orientaci&oacute;n laboral</abbr>
                     <br>
-                    Maria del Cielo Alejo Mulas</td>
+                    <abbr title="MAM">Maria del Cielo Alejo Mulas</abbr></td>
             </tr>
             <tr>
-                <td>De 12:15 a 13:05</td><td rowspan="2">Lenguaje de Marcas y Sistemas de Gestion de la Informaci&oacute;n
+                <td>De 12:15 a 13:05</td><td rowspan="2"><abbr title="LMSGI">Lenguaje de Marcas y Sistemas de Gestion de la Informaci&oacute;n</abbr>
                     <br>
-                    Amor Rodriguez Navarro</td><td rowspan="2">Sistemas de Informaci&oacute;n
+                    <abbr title="ARN">Amor Rodriguez Navarro</abbr></td><td rowspan="2"><abbr title="SINF">Sistemas de Informaci&oacute;n</abbr>
                     <br>
-                    Natividad Crespo Belver</td><td rowspan="2">Bases de Datos
+                    <abbr title="NCB">Natividad Crespo Belver</abbr></td><td rowspan="2"><abbr title="BBDD">Bases de Datos</abbr>
                     <br>
-                    Hermelinda Ramos Osorio</td>
+                    <abbr title="HRO">Hermelinda Ramos Osorio</abbr></td>
             </tr>
             <tr>
-                <td>De 13:05 a 13:55</td><td rowspan="1">Formaci&oacute;n y orientaci&oacute;n laboral
+                <td>De 13:05 a 13:55</td><td rowspan="1"><abbr title="FOL">Formaci&oacute;n y orientaci&oacute;n laboral</abbr>
                     <br>
-                    Maria del Cielo Alejo Mulas</td><td rowspan="1">Entornos de Desarrollo
+                    <abbr title="MAM">Maria del Cielo Alejo Mulas</abbr></td><td rowspan="1"><abbr title="EDD">Entornos de Desarrollo</abbr>
                     <br>
-                    Marcos Unzueta Puente</td>
+                    <abbr title="MUP">Marcos Unzueta Puente</abbr></td>
             </tr>
         </table>
         <footer>

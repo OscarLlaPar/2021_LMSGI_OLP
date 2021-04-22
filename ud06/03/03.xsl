@@ -27,6 +27,10 @@
                         border: solid white 1px;
                         border-collapse: collapse;
                     }
+                    table{
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                    }
                     th,td{
                         padding: 5px;
                     }
@@ -37,12 +41,31 @@
                         font-size: 10px;
                     }
                     footer{
-                        font-size: 10px;    
+                        font-size: 8px;    
                         text-align: center;
+                        padding-top: 20px;
                     }
                 </style>
             </head>
             <body>
+                <table>
+                    <tr>
+                        <th>Código del módulo</th>
+                        <th>Nombre del módulo</th>
+                    </tr>
+                    <xsl:apply-templates select="modulos/modulo">
+                        <xsl:sort select="@codM"/>
+                    </xsl:apply-templates>
+                </table>
+                <table>
+                    <tr>
+                        <th>Código del profesor</th>
+                        <th>Nombre del profesor</th>
+                    </tr>
+                    <xsl:apply-templates select="profesores/profesor">
+                        <xsl:sort select="@codP"/>
+                    </xsl:apply-templates>
+                </table>
                 <table>
                     <tr>
                         <th></th>
@@ -60,6 +83,34 @@
             </body>
         </html>
     </xsl:template>
+    <xsl:template match="modulos/modulo">
+        <tr>
+        <td>
+            <xsl:value-of select="./@codM"/>
+        </td>
+        <td>
+            <xsl:value-of select="current()"/>
+        </td>
+            <xsl:apply-templates select="dia_sem"/>
+          
+        
+        
+        </tr>
+    </xsl:template>
+    <xsl:template match="profesores/profesor">
+        <tr>
+        <td>
+            <xsl:value-of select="./@codP"/>
+        </td>
+        <td>
+            <xsl:value-of select="current()"/>
+        </td>
+            <xsl:apply-templates select="dia_sem"/>
+          
+        
+        
+        </tr>
+    </xsl:template>
     <xsl:template match="grupo/hora">
         <tr>
         <td>
@@ -67,9 +118,6 @@
         </td>
         
             <xsl:apply-templates select="dia_sem"/>
-          
-        
-        
         </tr>
     </xsl:template>
     <xsl:template match="dia_sem">
@@ -78,11 +126,20 @@
             <xsl:attribute name="rowspan">
                 <xsl:value-of select="@num"/>
             </xsl:attribute>
-            <xsl:value-of select="//modulos/modulo[@codM=current()]"/>
+            <abbr>
+                <xsl:attribute name="title">
+                    <xsl:value-of select="current()"/>
+                </xsl:attribute>
+                <xsl:value-of select="//modulos/modulo[@codM=current()]"/>
+            </abbr>
             <br/>
             <xsl:apply-templates select="asignatura"/>
+            <abbr>
+                <xsl:attribute name="title">
+                    <xsl:value-of select="//asignatura[@codM=current()]/@codProfesor"/>
+                </xsl:attribute>
             <xsl:value-of select="//profesores/profesor[@codP=//imparte/asignatura[@codM=current()]/@codProfesor]"/>
-            
+            </abbr>
         </td>
     </xsl:template>
 </xsl:stylesheet>
