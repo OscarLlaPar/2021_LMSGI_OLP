@@ -9,29 +9,47 @@
 -->
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-    <xsl:output method="html"/>
-
-    <!-- TODO customize transformation rules 
-         syntax recommendation http://www.w3.org/TR/xslt 
-    -->
+    
+    <xsl:output method="html" omit-xml-declaration="yes" encoding="UTF-8" indent="yes"/>
+    <xsl:decimal-format name="euro" decimal-separator="," grouping-separator="."/>
+    
     <xsl:template match="/listatickets">
-        <html>
-            <head>
-                <title>02 XSL Tickets Óscar Llamas Parra</title>
-                <link href="02.css"  rel="stylesheet"       type="text/css" />
-            </head>
-            <body>
-                <header>
-                    Información de tickets
-                </header>
-                
-                    <h1>Listado de tickets</h1>
-                    <xsl:apply-templates select="ticket"/>   
-                    
-                <p class="numeros"><xsl:value-of select="concat('Número de tickets: ',count(ticket))"/></p>
-                <p class="numeros"><xsl:value-of select="concat('Total de tickets: ',sum(ticket/producto/precio))"/></p>
-            </body>
-        </html>
+        <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
+        
+        <xsl:apply-templates select="comment()"/>   
+        <xsl:text xml:space="preserve">
+            <html>
+                <head>
+                    <META http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+                    <title>02 XSL Tickets Óscar Llamas Parra</title>
+                    <meta charset="UTF-8"/>
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+                    <meta name="author" content="Oscar Llamas Parra"/>
+                    <meta name="application-name" content="AppWeb de LMSGI"/>
+                    <meta name="description" content="Informacion de tickets"/>
+                    <meta name="keywords" content="tickets, total, xslt, xml"/>
+                    <meta name="robots" content="index, follow"/>
+                    <link href="02.css"  rel="stylesheet"       type="text/css" />
+                    <link rel="icon" href="../../imagen/favicon.ico" type="image/x-icon"/>
+                </head>
+                <body>
+                    <header>
+                        Información de tickets
+                    </header>
+                        <h1>Listado de tickets</h1>
+                        <xsl:apply-templates select="ticket"/>   
+                    <p class="numeros"><xsl:value-of select="concat('Número de tickets: ',count(ticket))"/></p>
+                    <p class="numeros"><xsl:value-of select="concat('Total de tickets: ',format-number(sum(ticket/producto/precio),'#,##' ,'euro'))"/></p>
+                </body>
+            </html>
+        </xsl:text>
+    </xsl:template>
+    <xsl:template match="comment()">
+        <xsl:text xml:space="preserve">
+        <xsl:comment>
+            <xsl:value-of select="."/>
+        </xsl:comment>
+        </xsl:text>
     </xsl:template>
     <xsl:template match="ticket">
         <div>
@@ -47,12 +65,12 @@
                 <tr>
                     <th>Total</th>
                     <th>
-                        <xsl:value-of select="sum(producto/precio)"/>
+                        <xsl:value-of select="format-number(sum(producto/precio),'#,##' ,'euro')"/>
                     </th>
                 </tr>  
             </table>
             <p class="fecha">
-                <xsl:value-of select="concat('Fecha del ticket: ',fecha)"/>
+                <xsl:value-of select="concat('Fecha del ticket: ',substring(fecha,9,2),'-',substring(fecha,6,2),'-',substring(fecha,1,4))"/>
             </p>
             
         </div>
@@ -63,7 +81,7 @@
                 <xsl:value-of select="nombre"/>
             </td>
             <td class="price">
-                <xsl:value-of select="precio"/>
+                <xsl:value-of select="format-number(precio,'#,##' ,'euro')"/>
             </td>
         </tr>
     </xsl:template>

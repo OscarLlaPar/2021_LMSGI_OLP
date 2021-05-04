@@ -40,7 +40,8 @@ th{
     color: black;
 }
 table{
-    left: 50%;
+    
+    margin-left: 20%;
     font-size: 20px;
     width: 60%;
 }
