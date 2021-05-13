@@ -17,6 +17,10 @@ and open the template in the editor.
     margin: 2px;
     padding: 2px;
 }
+label:hover, input:hover{
+    background-color:white;
+    color:black;
+}
 #botones{
     text-align:center;
     margin-top: 5px;
