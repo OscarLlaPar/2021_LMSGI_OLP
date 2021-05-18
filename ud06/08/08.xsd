@@ -8,32 +8,63 @@ and open the template in the editor.
 <xs:schema version="1.0"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
            elementFormDefault="qualified">
+    <xs:simpleType name="tipoTemp">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="-100"/>
+            <xs:maxInclusive value="100"/>
+        </xs:restriction>
+    </xs:simpleType>
     <xs:element name="prediccion">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="munincipio">
+                <xs:element name="municipio">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="nombre" type="xs:string"/>
-                            <xs:element name="provincia" type="xs:string"/>
+                            <xs:element name="nombre" type="xs:string" minOccurs="1"/>
+                            <xs:element name="provincia" type="xs:string" minOccurs="1"/>
                         </xs:sequence>
-                        <xs:attribute name="id" use="required" type="xs:id"/>
+                        <xs:attribute name="id" use="required">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="[0-9]{5}"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
                     </xs:complexType>
                 </xs:element>
                 <xs:element name="dia" minOccurs="7" maxOccurs="7">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="prob_precipitacion" type="xs:positiveInteger"/>
-                            <xs:element name="estado_cielo" type="xs:positiveInteger">
+                            <xs:element name="prob_precipitacion" type="xs:integer"/>
+                            <xs:element name="estado_cielo" >
                                 <xs:complexType>
-                                    <xs:attribute name="descripcion" type="xs:string"/>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:integer">
+                                           <xs:attribute name="descripcion" use="required" type="xs:string"/> 
+                                        </xs:extension>
+                                    </xs:simpleContent>
                                 </xs:complexType>
                             </xs:element>
                             <xs:element name="viento">
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element name="direccion" type="xs:string"/>
-                                        <xs:element name="velocidad" type="xs:positiveInteger/>
+                                        <xs:element name="velocidad">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:integer">
+                                                    <xs:minInclusive value="0"/>
+                                                    <xs:maxInclusive value="400"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="temperatura">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="maxima" type="tipoTemp"/>
+                                        <xs:element name="minima" type="tipoTemp"/>
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>

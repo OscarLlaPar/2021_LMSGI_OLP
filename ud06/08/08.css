@@ -10,7 +10,7 @@ and open the template in the editor.
 
 *{
     font-family: sans-serif;
-    font-size: 14px;
+    
 }
 h1{
     font-size:24px;
@@ -29,11 +29,12 @@ h2{
     font-weight: normal;
 }
 table{
-    width:100%;
+    width:75%;
 }
 th{
     background-color:#95B6E9;
     color:white;
+    font-size: 14px;
 }
 table{
     margin: 2px;
@@ -50,6 +51,7 @@ td{
     border-right: solid white 1px;
     border-bottom: solid #4F86D9 1px;
     border-collapse: collapse;
+    font-size: 14px;
 }
 .min{
     font-weight: bold;

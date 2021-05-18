@@ -10,14 +10,20 @@
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
     <xsl:output method="html"/>
-
+    
+    <xsl:include href="../lib/web.xsl"/>
     <!-- TODO customize transformation rules 
          syntax recommendation http://www.w3.org/TR/xslt 
     -->
     <xsl:template match="/">
+        <xsl:call-template name="docTipo"/>
         <html>
             <head>
-                <title>Unidad 6 Ejercicio 08 Óscar Llamas</title>
+                <xsl:call-template name="metaweb">
+                    <xsl:with-param name="titulo" select="'08 XSL Óscar Llamas Parra'"/>
+                    <xsl:with-param name="descripcion" select="'Predicción del tiempo por munincipios'"/>
+                </xsl:call-template>
+                <!--<title>Unidad 6 Ejercicio 08 Óscar Llamas</title>-->
                 <link href="08.css"  rel="stylesheet"       type="text/css" />
             </head>
             <body>

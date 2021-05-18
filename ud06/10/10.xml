@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<network>
+    <ethernets>
+        <name>
+            enp0s3
+        </name>
+        <addresses>
+            192.168.2.111/24
+        </addresses>
+        <gateway4>
+            192.168.2.1
+        </gateway4>
+        <nameservers>
+            <addresses>
+                8.8.8.8
+            </addresses>
+            <addresses>
+                8.8.4.4
+            </addresses>
+        </nameservers>
+    </ethernets>
+</network>
