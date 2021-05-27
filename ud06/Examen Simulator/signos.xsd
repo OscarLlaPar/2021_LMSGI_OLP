@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- signos.xsd - Validacion de los signos del zodiaco
+	 Autor - 
+	 Fecha - 14/06/2019
+-->
+
+<xs:schema version="1.0" 
+xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="horoscopo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="signo" maxOccurs="12">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[ARIES|TAURO|GEMINIS|CANCER|LEO|VIRGO|LIBRA|ESCORPIO|SAGITARIO|CAPRICORNIO|ACUARIO|PISCIS]"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="fecha">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:maxLength value="100"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="id">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:positiveInteger">
+                                    <xs:maxInclusive value="12"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
+	
