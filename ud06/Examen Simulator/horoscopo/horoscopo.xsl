@@ -11,7 +11,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
     <xsl:output method="html"/>
     <xsl:include href="../../lib/web.xsl"/>
-    <xsl:include href="../signos.xml"/>
+    <xsl:include href="../signos.xsl"/>
     <!-- TODO customize transformation rules 
          syntax recommendation http://www.w3.org/TR/xslt 
     -->
@@ -23,13 +23,14 @@
                     <xsl:with-param name="titulo" select="'Consulta del signo'"/>
                     <xsl:with-param name="descripcion" select="'Consulta del signo'"/>
                 </xsl:call-template>
+                <link href="../css/estilos.css"  rel="stylesheet"       type="text/css" />
                 <!--<title>Unidad 6 Ejercicio 08 Óscar Llamas</title>-->
-                <link href="estilos.css"  rel="stylesheet"       type="text/css" />
+                
             </head>
             <body>
-                <h1>
-                    
-                </h1>
+                <div class="padre">
+                    <h1>HOROSCOPO<xsl:value-of select="document('signos.xml')//signo[@id=current()//sign/@id]/nombre"/></h1>
+                </div>
             </body>
         </html>
     </xsl:template>

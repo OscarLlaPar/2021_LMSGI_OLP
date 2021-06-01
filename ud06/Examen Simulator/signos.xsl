@@ -13,6 +13,7 @@
         <xsl:include href="../lib/web.xsl"/>
         <xsl:template match="/">
             <html>
+                <xsl:call-template name="docTipo"/> 
                 <head>
                     <xsl:call-template name="metaweb"> 
                         <xsl:with-param name="titulo" select="'Signos del horóscopo'"/>
@@ -23,7 +24,10 @@
                 </head>
                 <body>
                     <h1>HORÓSCOPO/SIGNOS DEL ZODÍACO</h1>
-                    <xsl:apply-templates select="horoscopo/signo"/>
+                    <div class="padre">
+                        <xsl:apply-templates select="horoscopo/signo"/>
+                    </div>
+                    
                 </body>
             </html> 
         </xsl:template>
@@ -45,7 +49,7 @@
                         </xsl:attribute>
                         <a>
                             <xsl:attribute name="href">
-                                <xsl:value-of select="'horoscopo/horoscopo.html'"/>
+                                <xsl:value-of select="concat('horoscopo/',nombre,'/horoscopo.xml')"/>
                             </xsl:attribute>
                             <img class="imgsigno">
                                 <xsl:attribute name="src">
