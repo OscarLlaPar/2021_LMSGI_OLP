@@ -16,11 +16,16 @@
     -->
     <xsl:template match="/network">
         <xsl:text>
-            <xsl:value-of select="concat(name(),':')"/>
+            <xsl:value-of select="concat(name(),': ','&#10;')"/>
         </xsl:text>
-        <xsl:text>
-            <xsl:value-of select="concat('  ',name(),':')"/>
-        </xsl:text>
+        <xsl:apply-templates select="ethernets"/>
     </xsl:template>
-    
+    <xsl:template match="ethernets">
+        <xsl:value-of select="concat('  ',name(),':')"/>
+        <xsl:value-of select="concat('      ',name)"/>
+        <xsl:value-of select="concat('          ',name(addresses),':')"/>
+        <xsl:value-of select="addresses"/>
+        <xsl:value-of select="concat('          ',name(gateway4),':',gateway4)"/>
+        <xsl:value-of select="concat(name(nameservers),':',nameservers/addresses)"/>
+    </xsl:template>
 </xsl:stylesheet>

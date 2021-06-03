@@ -12,8 +12,9 @@
 	<xsl:output method="html"/>
         <xsl:include href="../lib/web.xsl"/>
         <xsl:template match="/">
+            <xsl:call-template name="docTipo"/> 
             <html>
-                <xsl:call-template name="docTipo"/> 
+                
                 <head>
                     <xsl:call-template name="metaweb"> 
                         <xsl:with-param name="titulo" select="'Signos del horóscopo'"/>

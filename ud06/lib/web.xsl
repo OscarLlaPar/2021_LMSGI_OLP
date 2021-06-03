@@ -14,6 +14,8 @@
     <!-- TODO customize transformation rules 
          syntax recommendation http://www.w3.org/TR/xslt 
     -->
+    
+    
     <xsl:template name="metaweb">
         <META http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <xsl:param name="titulo"/>
