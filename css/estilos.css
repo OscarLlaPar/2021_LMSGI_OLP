@@ -34,6 +34,13 @@ a:hover{
     color: black;
     text-decoration: underline;
 }
+.nav{
+    margin:10px;
+    width: 95%;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
 .title{
     font-weight: bold;
     font-size: 30px;
@@ -50,6 +57,9 @@ a:hover{
     margin-bottom:10px;
 }
 .header{
+    margin-bottom: 10px;
+    border-top: solid white 5px;
+    border-bottom: solid white 5px;
 }
 h2{
    
@@ -57,23 +67,10 @@ h2{
     border-top: solid white 4px;
     border-bottom: solid white 4px;
 }
-#u2{
-    background-color: #43055C;
-}
-#u3{
-    background-color: #00345C;
-}
-#u4{
-    background-color: #400400;
-}
-#u5{
-    background-color: #595959;
-}
-#u6{
-    background-color: #7A7A33;
-}
+
 #name{
     font-style: italic;
+    font-weight:bold;
     font-size: 20px;
     padding: 5px;
 }
@@ -94,14 +91,11 @@ h2{
 .sch{
     font-size:8px;
 }
-table{
+.unit6{
     margin-top: 10px;
     width: 100%;
 }
-table,tr td{
-    border: solid white 1px;
-    border-collapse: collapse;
-}
+
 td{
     padding: 5px;
     width: 10%;
@@ -111,4 +105,22 @@ td{
     color: black;
     font-weight: bold;
     width: 60%;
+}
+footer{
+    font-size: 10px;
+    margin: 10px;
+}
+.central{
+    
+}
+.unitname{
+    text-align: right;
+}
+.central{
+    font-size: 18px;
+    text-align:center;
+    font-weight: bold;
+}
+.icon{
+    text-align: left;
 }
